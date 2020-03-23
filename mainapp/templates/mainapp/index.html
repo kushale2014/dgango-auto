@@ -19,18 +19,40 @@
         </nav>
         <a class="btn btn-outline-primary" href="#">Sign up</a>
     </div>
-    <div class="container"></div>
-        <div class="row">
-            <div class="col-4 offset-1">
-                <h2>Авто на сайте OLX</h2>
-                {% for car in cars %}
-                <div class="alert alert-info">
-                    <img src="{{car.img}}" alt="Фото авто" class="img-thumbnail">
-                    {{car.title}}  <b>{{car.price_S}}</b>
+    <div class="container">
+        <h2>Авто на сайте OLX</h2>
+        {% for car in cars0 %}
+        <div class="row" style="margin-right: -40px; margin-left: -40px;">
+        {{ forloop.counter }}
+        <div class="alert alert-info" style="width: 100%; max-height: 154px; display:flex">
+            <div style="width:50%; display: flex;">
+                <div>
+                    <a href="{{car.href}}" target="_blank">
+                    <img src="{{car.img}}" alt="Фото авто" class="img-thumbnail" style="max-width:150px;max-height:130px;">
+                    </a>
                 </div>
-                {% endfor %}
+                <div style="margin-left: 10px;">
+                    <a href="{{car.href}}" target="_blank"><h4>{{car.title}}</h4></a>
+                    <b style="font-size: 23px;">{{car.price_S}}</b> {{car.date}}<br>
+                    {{car.place}}
+                </div>
             </div>
-
-        </div>
+            {% with cars1[forloop.counter0] as car1 %}
+            <div style="width:50%; display: flex;">
+                <div>
+                    <a href="{{car1.href}}" target="_blank">
+                    <img src="{{car1.img}}" alt="Фото авто" class="img-thumbnail" style="max-width:150px;max-height:130px;">
+                    </a>
+                </div>
+                <div style="margin-left: 10px;">
+                    <a href="{{car1.href}}" target="_blank"><h4>{{car1.title}}</h4></a>
+                    <b style="font-size: 23px;">{{car1.price_S}}</b> {{car1.date}}<br>
+                    {{car1.place}}
+                </div>
+            </div>
+        </div></div>
+        {% endwith %}
+        {% endfor %}
+    </div>
 </body>
 </html>
