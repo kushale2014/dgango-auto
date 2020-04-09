@@ -1,49 +1,75 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style.css' %}">
     <title>Купить авто</title>
 </head>
+
 <body>
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-
-        <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
-        <nav class="my-2 my-md-0 mr-md-3">
-          <a class="p-2 text-dark" href="#">Features</a>
-          <a class="p-2 text-dark" href="#">Enterprise</a>
-          <a class="p-2 text-dark" href="#">Support</a>
-          <a class="p-2 text-dark" href="#">Pricing</a>
-        </nav>
-        <a class="btn btn-outline-primary" href="#">Sign up</a>
-    </div>
-    <div class="container">
-        <h2>Авто на сайте OLX</h2>
-        {% load list_columns %}
-
-        {% with cars|list_columns:2 as cars2 %}
-        {% for car_row in cars2 %}
-        <div class="row" style="margin-right: -40px; margin-left: -40px;">
-        {{ forloop.counter }}
-        <div class="alert alert-info" style="width: 100%; max-height: 154px; display:flex">
-            {% for car in car_row %}
-            <div style="width:50%; display: flex;">
-                <div>
+    <div class="wrapper">
+        <section class="cars">
+            <h2 class="title olx">Авто на сайте OLX</h2>
+            <hr>
+            <div class="content olx">
+                {% for car in olx %}
+                <div class="item">
+                    <span class="counter">{{ forloop.counter }}</span>
                     <a href="{{car.href}}" target="_blank">
-                    <img src="{{car.img}}" alt="Фото авто" class="img-thumbnail" style="max-width:150px;max-height:130px;">
+                        <img src="{{car.img}}" alt="Фото авто" class="img-thumbnail">
+                        <h4>{{car.title}}</h4>
                     </a>
-                </div>
-                <div style="margin-left: 10px;">
-                    <a href="{{car.href}}" target="_blank"><h4>{{car.title}}</h4></a>
-                    <b style="font-size: 23px;">{{car.price_S}}</b> {{car.date}}<br>
+                    <span class="price">{{car.price_S}}</span> {{car.date}}<br>
                     {{car.place}}
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-        </div></div>
-        {% endfor %}
-        {% endwith %}
+            <hr>
+            <div class="footer olx"></div>
+        </section>
+        <section class="cars">
+            <h2 class="title autoria">Авто на сайте Autoria</h2>
+            <hr>
+            <div class="content autoria">
+                {% for car in autoria %}
+                <div class="item">
+                    <span class="counter">{{ forloop.counter }}</span>
+                    <a href="{{car.href}}" target="_blank">
+                        <img src="{{car.img}}" alt="Фото авто" class="img-thumbnail">
+                        <h4>{{car.title}}</h4>
+                    </a>
+                    <span class="price">{{car.price_S}}</span> {{car.date}}<br>
+                    {{car.place}}
+                </div>
+                {% endfor %}
+            </div>
+            <hr>
+            <div class="footer autoria"></div>
+        </section>
+        <section class="cars">
+            <h2 class="title rst">Авто на сайте RST</h2>
+            <hr>
+            <div class="content rst">
+                {% for car in rst %}
+                <div class="item">
+                    <span class="counter">{{ forloop.counter }}</span>
+                    <a href="{{car.href}}" target="_blank">
+                        <img src="{{car.img}}" alt="Фото авто" class="img-thumbnail">
+                        <h4>{{car.title}}</h4>
+                    </a>
+                    <span class="price">{{car.price_S}}</span> {{car.date}}<br>
+                    {{car.place}}
+                </div>
+                {% endfor %}
+            </div>
+            <hr>
+            <div class="footer rst"></div>
+        </section>
     </div>
 </body>
+
 </html>

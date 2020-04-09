@@ -1,9 +1,15 @@
 from django.shortcuts import render
-from mainapp.get_olx import get_cars_olx
+from mainapp.get_cars import get_olx, get_autoria, get_rst
+
+count_cars = 100
+
 
 def index(request):
-    cars = get_cars_olx(100)
-    # cars0 = [cars[key] for key in range(0, len(cars), 2)]
-    # cars1 = [cars[key] for key in range(1, len(cars)+1, 2)]
-    return render(request, 'mainapp/index.html', {'cars' : cars})
-    
+    olx = get_olx(count_cars)
+    autoria = get_autoria(count_cars)
+    rst = get_rst(count_cars)
+    return render(request, 'mainapp/index.html', {
+        'olx': olx,
+        'autoria': autoria,
+        'rst': rst,
+    })
