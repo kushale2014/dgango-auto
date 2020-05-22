@@ -5,255 +5,2846 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/style.css">
     <title>Купить авто</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <section class="cars">
-            <h2 class="title olx">Авто на сайте OLX</h2>
-            <hr>
-            <div class="content olx">
+        <aside class="left-side sidebar-offcanvas">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- Sidebar user panel -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="img/avatar3.png" class="img-circle" alt="User Image" />
+                    </div>
+                    <div class="pull-left info">
+                        <p>Hello, Jane</p>
 
-                <div class="item">
-                    <span class="counter">1</span>
-                    <a href="https://www.olx.ua/obyavlenie/kuzov-s-dokumentami-2004g-evropa-IDGTJFD.html#1611e910c9"
-                        target="_blank">
-                        <img src="https://apollo-ireland.akamaized.net:443/v1/files/qw649g4sefl81-UA/image;s=261x203"
-                            alt="Фото авто" class="img-thumbnail">
-                        <h4>Кузов с документами 2004г Европа</h4>
-                    </a>
-                    <span class="price">900 $</span> Вчера 20:11<br>
-                    Одесса, Малиновский
+                        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                    </div>
                 </div>
+                <!-- search form -->
+                <form action="#" method="get" class="sidebar-form">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" placeholder="Search..." />
+                        <span class="input-group-btn">
+                            <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i
+                                    class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                </form>
+                <!-- /.search form -->
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu">
+                    <li class="active">
+                        <a href="index.html">
+                            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/widgets.html">
+                            <i class="fa fa-th"></i> <span>Widgets</span> <small
+                                class="badge pull-right bg-green">new</small>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-bar-chart-o"></i>
+                            <span>Charts</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="pages/charts/morris.html"><i class="fa fa-angle-double-right"></i> Morris</a>
+                            </li>
+                            <li><a href="pages/charts/flot.html"><i class="fa fa-angle-double-right"></i> Flot</a></li>
+                            <li><a href="pages/charts/inline.html"><i class="fa fa-angle-double-right"></i> Inline
+                                    charts</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-laptop"></i>
+                            <span>UI Elements</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="pages/UI/general.html"><i class="fa fa-angle-double-right"></i> General</a>
+                            </li>
+                            <li><a href="pages/UI/icons.html"><i class="fa fa-angle-double-right"></i> Icons</a></li>
+                            <li><a href="pages/UI/buttons.html"><i class="fa fa-angle-double-right"></i> Buttons</a>
+                            </li>
+                            <li><a href="pages/UI/sliders.html"><i class="fa fa-angle-double-right"></i> Sliders</a>
+                            </li>
+                            <li><a href="pages/UI/timeline.html"><i class="fa fa-angle-double-right"></i> Timeline</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-edit"></i> <span>Forms</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="pages/forms/general.html"><i class="fa fa-angle-double-right"></i> General
+                                    Elements</a>
+                            </li>
+                            <li><a href="pages/forms/advanced.html"><i class="fa fa-angle-double-right"></i> Advanced
+                                    Elements</a></li>
+                            <li><a href="pages/forms/editors.html"><i class="fa fa-angle-double-right"></i> Editors</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-table"></i> <span>Tables</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="pages/tables/simple.html"><i class="fa fa-angle-double-right"></i> Simple
+                                    tables</a>
+                            </li>
+                            <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> Data
+                                    tables</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="pages/calendar.html">
+                            <i class="fa fa-calendar"></i> <span>Calendar</span>
+                            <small class="badge pull-right bg-red">3</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/mailbox.html">
+                            <i class="fa fa-envelope"></i> <span>Mailbox</span>
+                            <small class="badge pull-right bg-yellow">12</small>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-folder"></i> <span>Examples</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="pages/examples/invoice.html"><i class="fa fa-angle-double-right"></i>
+                                    Invoice</a></li>
+                            <li><a href="pages/examples/login.html"><i class="fa fa-angle-double-right"></i> Login</a>
+                            </li>
+                            <li><a href="pages/examples/register.html"><i class="fa fa-angle-double-right"></i>
+                                    Register</a>
+                            </li>
+                            <li><a href="pages/examples/lockscreen.html"><i class="fa fa-angle-double-right"></i>
+                                    Lockscreen</a>
+                            </li>
+                            <li><a href="pages/examples/404.html"><i class="fa fa-angle-double-right"></i> 404 Error</a>
+                            </li>
+                            <li><a href="pages/examples/500.html"><i class="fa fa-angle-double-right"></i> 500 Error</a>
+                            </li>
+                            <li><a href="pages/examples/blank.html"><i class="fa fa-angle-double-right"></i> Blank
+                                    Page</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+        <aside class="center-side">
+            <section class="cars">
+                <h2 class="title olx">Авто на сайте OLX</h2>
+                <hr>
+                <div class="content olx">
 
-                <div class="item">
-                    <span class="counter">2</span>
-                    <a href="https://www.olx.ua/obyavlenie/ford-fiesta-se-ford-2013-IDHusg3.html#1611e910c9"
-                        target="_blank">
-                        <img src="https://apollo-ireland.akamaized.net:443/v1/files/i5olz764ygw5-UA/image;s=261x203"
-                            alt="Фото авто" class="img-thumbnail">
-                        <h4>Ford Fiesta SE Форд 2013</h4>
-                    </a>
-                    <span class="price">1 100 $</span> Вчера 18:48<br>
-                    Одесса, Приморский
-                </div>
+                    <div class="item">
+                        <span class="counter">1</span>
+                        <a href="https://www.olx.ua/obyavlenie/citroen-xsara-picasso-IDI6QRO.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/35xz79hmbxdo-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Citroen xsara picasso</h4>
+                        </a>
+                        <span class="price">1 006 $</span> Сегодня 10:05<br>
+                        Черноморск
+                    </div>
 
-                <div class="item">
-                    <span class="counter">3</span>
-                    <a href="https://www.olx.ua/obyavlenie/kia-forte-ex-kia-2012-IDHz5FK.html#1611e910c9"
-                        target="_blank">
-                        <img src="https://apollo-ireland.akamaized.net:443/v1/files/faowyk272q0j3-UA/image;s=261x203"
-                            alt="Фото авто" class="img-thumbnail">
-                        <h4>Kia Forte EX Киа 2012</h4>
-                    </a>
-                    <span class="price">1 200 $</span> Вчера 17:56<br>
-                    Одесса, Приморский
-                </div>
+                    <div class="item">
+                        <span class="counter">2</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-ili-obmen-na-blyahi-IDI6QRy.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/58clksrqnm9o2-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам или обмен на бляхи</h4>
+                        </a>
+                        <span class="price">1 118 $</span> Сегодня 10:05<br>
+                        Одесса, Приморский
+                    </div>
 
-                <div class="item">
-                    <span class="counter">4</span>
-                    <a href="https://www.olx.ua/obyavlenie/opel-vectra-gaz-benzin-IDHz4tj.html#1611e910c9"
-                        target="_blank">
-                        <img src="https://apollo-ireland.akamaized.net:443/v1/files/v2nwmkh17wbz-UA/image;s=261x203"
-                            alt="Фото авто" class="img-thumbnail">
-                        <h4>Opel Vectra газ бензин</h4>
-                    </a>
-                    <span class="price">1 200 $</span> Вчера 17:33<br>
-                    Одесса, Малиновский
-                </div>
+                    <div class="item">
+                        <span class="counter">3</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-ili-obmenyayu-IDI6PRo.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/kwpszmcink9j1-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам или обменяю</h4>
+                        </a>
+                        <span class="price">969 $</span> Сегодня 09:33<br>
+                        Великий Дальник
+                    </div>
 
-                <div class="item">
-                    <span class="counter">5</span>
-                    <a href="https://www.olx.ua/obyavlenie/ford-fiesta-se-ford-2013-IDHz1Ge.html#1611e910c9"
-                        target="_blank">
-                        <img src="https://apollo-ireland.akamaized.net:443/v1/files/a7409sblqc3q3-UA/image;s=261x203"
-                            alt="Фото авто" class="img-thumbnail">
-                        <h4>Ford Fiesta SE Форд 2013</h4>
-                    </a>
-                    <span class="price">1 000 $</span> Вчера 16:39<br>
-                    Одесса, Приморский
-                </div>
+                    <div class="item">
+                        <span class="counter">4</span>
+                        <a href="https://www.olx.ua/obyavlenie/zapchasti-cheri-m11-chery-m11-IDI6GFN.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/v67oy7eseydr1-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Запчасти Чери м11 chery m11</h4>
+                        </a>
+                        <span class="price">1 000 $</span> Вчера 21:29<br>
+                        Одесса, Малиновский
+                    </div>
 
-                <div class="item">
-                    <span class="counter">6</span>
-                    <a href="https://www.olx.ua/obyavlenie/prodam-zaz-IDHyYtA.html#1611e910c9" target="_blank">
-                        <img src="https://apollo-ireland.akamaized.net:443/v1/files/20frps35v93c-UA/image;s=261x203"
-                            alt="Фото авто" class="img-thumbnail">
-                        <h4>Продам заз</h4>
-                    </a>
-                    <span class="price">550 $</span> Вчера 15:40<br>
-                    Великодолинское
-                </div>
+                    <div class="item">
+                        <span class="counter">5</span>
+                        <a href="https://www.olx.ua/obyavlenie/nissan-65471-2y010-IDHGULE.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/vginykd917g-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Nissan 65471-2Y010</h4>
+                        </a>
+                        <span class="price">414 $</span> Вчера 21:18<br>
+                        Одесса, Малиновский
+                    </div>
 
-                <div class="item">
-                    <span class="counter">7</span>
-                    <a href="https://www.olx.ua/obyavlenie/prodam-nissan-primera-p11-2-0-IDHyRog.html#1611e910c9"
-                        target="_blank">
-                        <img src="https://apollo-ireland.akamaized.net:443/v1/files/quo3wwtedb4e3-UA/image;s=261x203"
-                            alt="Фото авто" class="img-thumbnail">
-                        <h4>Продам Nissan Primera p11 2.0</h4>
-                    </a>
-                    <span class="price">1 100 $</span> Вчера 13:30<br>
-                    Одесса, Суворовский
-                </div>
+                    <div class="item">
+                        <span class="counter">6</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-avtomobil-vaz-2106-IDI6F0r.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/pv77rwe1mdh81-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам автомобиль ваз-2106</h4>
+                        </a>
+                        <span class="price">1 118 $</span> Вчера 20:48<br>
+                        Одесса, Киевский
+                    </div>
 
-                <div class="item">
-                    <span class="counter">8</span>
-                    <a href="https://www.olx.ua/obyavlenie/prodam-dvigatel-IDHyPLj.html#1611e910c9" target="_blank">
-                        <img src="https://apollo-ireland.akamaized.net:443/v1/files/8ke2smm4gxlq3-UA/image;s=261x203"
-                            alt="Фото авто" class="img-thumbnail">
-                        <h4>Продам двигатель</h4>
-                    </a>
-                    <span class="price">500 $</span> Вчера 12:59<br>
-                    Одесса, Суворовский
-                </div>
+                    <div class="item">
+                        <span class="counter">7</span>
+                        <a href="https://www.olx.ua/obyavlenie/vaz-21053-chehiya-IDI6CzY.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/pvpaiw2i8uz92-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Ваз 21053 Чехия</h4>
+                        </a>
+                        <span class="price">550 $</span> Вчера 19:50<br>
+                        Борщи
+                    </div>
 
-                <div class="item">
-                    <span class="counter">9</span>
-                    <a href="https://www.olx.ua/obyavlenie/prodam-srochno-na-hodu-IDHyNWQ.html#1611e910c9"
-                        target="_blank">
-                        <img src="https://apollo-ireland.akamaized.net:443/v1/files/6s5ndfn9z2vr2-UA/image;s=261x203"
-                            alt="Фото авто" class="img-thumbnail">
-                        <h4>Продам срочно на ходу</h4>
-                    </a>
-                    <span class="price">650 $</span> Вчера 12:23<br>
-                    Новая Долина
-                </div>
+                    <div class="item">
+                        <span class="counter">8</span>
+                        <a href="https://www.olx.ua/obyavlenie/audi-as5-razborka-IDHrFHF.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/zo3dt04kr68v1-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ауди а:с5 разборка</h4>
+                        </a>
+                        <span class="price">555 $</span> Вчера 18:35<br>
+                        Одесса, Суворовский
+                    </div>
 
-                <div class="item">
-                    <span class="counter">10</span>
-                    <a href="https://www.olx.ua/obyavlenie/opel-vectra-b-IDHuLf3.html#1611e910c9;promoted"
-                        target="_blank">
-                        <img src="https://apollo-ireland.akamaized.net:443/v1/files/s7itgikgy7vu3-UA/image;s=261x203;r=270"
-                            alt="Фото авто" class="img-thumbnail">
-                        <h4>Opel vectra b</h4>
-                    </a>
-                    <span class="price">1 000 $</span> Вчера 11:17<br>
-                    Измаил
-                </div>
-            </div>
-            <hr>
-            <div class="footer olx"></div>
-        </section>
-        <section class="cars">
-            <h2 class="title autoria">Авто на сайте Autoria</h2>
-            <hr>
-            <div class="content autoria">
+                    <div class="item">
+                        <span class="counter">9</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-vaz-2109-1995g-v-horoshem-sostoyanii-IDI6yWi.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/5dnfwkduc7ed-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам Ваз 2109 1995г в хорошем состоянии</h4>
+                        </a>
+                        <span class="price">1 200 $</span> Вчера 18:21<br>
+                        Одесса, Киевский
+                    </div>
 
-                <div class="item">
-                    <span class="counter">1</span>
-                    <a href="https://auto.ria.com/auto_audi_a4_26667007.html" target="_blank">
-                        <img src="https://cdn0.riastatic.com/photosnew/auto/photo/audi_a4__323912360bx.jpg"
-                            alt="Фото авто" class="img-thumbnail">
-                        <h4>Audi A4 1996</h4>
-                    </a>
-                    <span class="price">1 000</span> 23.03.2020<br>
-                    Измаил
-                </div>
+                    <div class="item">
+                        <span class="counter">10</span>
+                        <a href="https://www.olx.ua/obyavlenie/daewoo-nexia-IDI6xA9.html#1611e910c9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/zd064xijsbc9-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Daewoo nexia</h4>
+                        </a>
+                        <span class="price">800 $</span> Вчера 17:51<br>
+                        Одесса, Суворовский
+                    </div>
 
-                <div class="item">
-                    <span class="counter">2</span>
-                    <a href="https://auto.ria.com/auto_vaz_2107_26663785.html" target="_blank">
-                        <img src="https://cdn0.riastatic.com/photosnew/auto/photo/vaz_2107__323854370bx.jpg"
-                            alt="Фото авто" class="img-thumbnail">
-                        <h4>ВАЗ 2107 2001</h4>
-                    </a>
-                    <span class="price">1 100</span> 22.03.2020<br>
-                    Овидиополь
-                </div>
+                    <div class="item">
+                        <span class="counter">11</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-moskvich-IDI6pbu.html#1611e910c9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/uh7u7ml566vf2-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам москвич</h4>
+                        </a>
+                        <span class="price">820 $</span> Вчера 14:54<br>
+                        Беленькое
+                    </div>
 
-                <div class="item">
-                    <span class="counter">3</span>
-                    <a href="https://auto.ria.com/auto_vaz_2108_26649475.html" target="_blank">
-                        <img src="https://cdn2.riastatic.com/photosnew/auto/photo/vaz_2108__323556352bx.jpg"
-                            alt="Фото авто" class="img-thumbnail">
-                        <h4>ВАЗ 2108 1997</h4>
-                    </a>
-                    <span class="price">1 000</span> 20.03.2020<br>
-                    Одесса
-                </div>
+                    <div class="item">
+                        <span class="counter">12</span>
+                        <a href="https://www.olx.ua/obyavlenie/kia-soul-2-kia-sol-2-posle-2014-goda-vypuska-dvigatel-1-6-avtomat-IDGOrjW.html#1611e910c9;promoted"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/gouajmvzefi02-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Kia Soul 2 - Киа Сол 2 -после 2014 года выпуска двигатель 1.6 автомат</h4>
+                        </a>
+                        <span class="price">911 $</span> Вчера 13:49<br>
+                        Одесса, Киевский
+                    </div>
 
-                <div class="item">
-                    <span class="counter">4</span>
-                    <a href="https://auto.ria.com/auto_vaz_2104_25832904.html" target="_blank">
-                        <img src="https://cdn2.riastatic.com/photosnew/auto/photo/vaz_2104__307181032bx.jpg"
-                            alt="Фото авто" class="img-thumbnail">
-                        <h4>ВАЗ 2104 2004</h4>
-                    </a>
-                    <span class="price">1 000</span> 1.04.2020<br>
-                    Одесса
-                </div>
+                    <div class="item">
+                        <span class="counter">13</span>
+                        <a href="https://www.olx.ua/obyavlenie/mazda-cx-3-awd-2017-2-0-IDI6hS1.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/bweb03i7452f3-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Mazda CX-3 AWD 2017 2.0</h4>
+                        </a>
+                        <span class="price">578 $</span> Вчера 12:27<br>
+                        Одесса, Киевский
+                    </div>
 
-                <div class="item">
-                    <span class="counter">5</span>
-                    <a href="https://auto.ria.com/auto_opel_vectra_b_26717351.html" target="_blank">
-                        <img src="https://cdn2.riastatic.com/photosnew/auto/photo/opel_vectra-b__324957417bx.jpg"
-                            alt="Фото авто" class="img-thumbnail">
-                        <h4>Opel Vectra B 2000</h4>
-                    </a>
-                    <span class="price">1 100</span> 1.04.2020<br>
-                    Одесса
-                </div>
+                    <div class="item">
+                        <span class="counter">14</span>
+                        <a href="https://www.olx.ua/obyavlenie/zaz-tavriya-IDI5YcE.html#1611e910c9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/y5c4l03j0gg91-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ЗАЗ Таврия</h4>
+                        </a>
+                        <span class="price">750 $</span> 20 май<br>
+                        Одесса, Приморский
+                    </div>
 
-                <div class="item">
-                    <span class="counter">6</span>
-                    <a href="https://auto.ria.com/auto_opel_astra_g_26717330.html" target="_blank">
-                        <img src="https://cdn3.riastatic.com/photosnew/auto/photo/opel_astra-g__324957163bx.jpg"
-                            alt="Фото авто" class="img-thumbnail">
-                        <h4>Opel Astra G 1999</h4>
-                    </a>
-                    <span class="price">1 000</span> 1.04.2020<br>
-                    Одесса
-                </div>
+                    <div class="item">
+                        <span class="counter">15</span>
+                        <a href="https://www.olx.ua/obyavlenie/fiat-500-pop-fiat-2013-IDHVDBl.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/u74bfki3sffu2-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Fiat 500 POP Фиат 2013</h4>
+                        </a>
+                        <span class="price">800 $</span> 20 май<br>
+                        Одесса, Приморский
+                    </div>
 
-                <div class="item">
-                    <span class="counter">7</span>
-                    <a href="https://auto.ria.com/auto_zaz_1102_tavriya_26717265.html" target="_blank">
-                        <img src="" alt="Фото авто" class="img-thumbnail">
-                        <h4>ЗАЗ 1102 Таврия 2001</h4>
-                    </a>
-                    <span class="price">1 100</span> 1.04.2020<br>
-                    Одесса
-                </div>
+                    <div class="item">
+                        <span class="counter">16</span>
+                        <a href="https://www.olx.ua/obyavlenie/vaz-2107-eksportniy-variant-IDFWsjy.html#1611e910c9;promoted"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/ufatr4pb36c62-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Ваз 2107 експортний вариант</h4>
+                        </a>
+                        <span class="price">900 $</span> 20 май<br>
+                        Дачное
+                    </div>
 
-                <div class="item">
-                    <span class="counter">8</span>
-                    <a href="https://auto.ria.com/auto_gaz_3110_26492350.html" target="_blank">
-                        <img src="https://cdn3.riastatic.com/photosnew/auto/photo/gaz_3110__320178928bx.jpg"
-                            alt="Фото авто" class="img-thumbnail">
-                        <h4>ГАЗ 3110 1999</h4>
-                    </a>
-                    <span class="price">700</span> 1.04.2020<br>
-                    Сарата
-                </div>
+                    <div class="item">
+                        <span class="counter">17</span>
+                        <a href="https://www.olx.ua/obyavlenie/azlk-moskvich-IDEPcMC.html#1611e910c9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/iw9mxyb19fue1-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>АЗЛК москвич</h4>
+                        </a>
+                        <span class="price">335 $</span> 20 май<br>
+                        Окны
+                    </div>
 
-                <div class="item">
-                    <span class="counter">9</span>
-                    <a href="https://auto.ria.com/auto_nissan_primera_26716297.html" target="_blank">
-                        <img src="https://cdn1.riastatic.com/photosnew/auto/photo/nissan_primera__324935536bx.jpg"
-                            alt="Фото авто" class="img-thumbnail">
-                        <h4>Nissan Primera 1999</h4>
-                    </a>
-                    <span class="price">1 100</span> 1.04.2020<br>
-                    Одесса
-                </div>
+                    <div class="item">
+                        <span class="counter">18</span>
+                        <a href="https://www.olx.ua/obyavlenie/mitsubishi-lancer-gts-mitsubisi-2011-IDHVz3u.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/urtipajcaxan2-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Mitsubishi Lancer GTS Митсубиси 2011</h4>
+                        </a>
+                        <span class="price">1 100 $</span> 20 май<br>
+                        Одесса, Приморский
+                    </div>
 
-                <div class="item">
-                    <span class="counter">10</span>
-                    <a href="https://auto.ria.com/auto_zaz_1102_tavriya_26714434.html" target="_blank">
-                        <img src="https://cdn0.riastatic.com/photosnew/auto/photo/zaz_1102-tavriya__324895840bx.jpg"
-                            alt="Фото авто" class="img-thumbnail">
-                        <h4>ЗАЗ 1102 Таврия 2006</h4>
-                    </a>
-                    <span class="price">1 000</span> 31.03.2020<br>
-                    Одесса
+                    <div class="item">
+                        <span class="counter">19</span>
+                        <a href="https://www.olx.ua/obyavlenie/kia-forte-ex-kia-2013-IDI5SQ8.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/hjiqz8jfy3gg3-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Kia Forte EX Киа 2013</h4>
+                        </a>
+                        <span class="price">950 $</span> 20 май<br>
+                        Одесса, Приморский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">20</span>
+                        <a href="https://www.olx.ua/obyavlenie/mazda-3-i-mazda-2013-IDI5R0M.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/iztki7bmqub63-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Mazda 3 I Mазда 2013</h4>
+                        </a>
+                        <span class="price">1 000 $</span> 20 май<br>
+                        Одесса, Приморский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">21</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-vaz-2109-IDI2Zdy.html#1611e910c9;promoted"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/5oetnsan4obr-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам Ваз 2109</h4>
+                        </a>
+                        <span class="price">600 $</span> 20 май<br>
+                        Майори
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">22</span>
+                        <a href="https://www.olx.ua/obyavlenie/kia-soul-kia-2013-IDI5iCb.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/f5rdzst4vai9-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Kia Soul + Киа 2013</h4>
+                        </a>
+                        <span class="price">1 000 $</span> 19 май<br>
+                        Одесса, Приморский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">23</span>
+                        <a href="https://www.olx.ua/obyavlenie/kia-ceed-IDH3zyI.html#1611e910c9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/9wrl9l6pacb61-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Kia ceed</h4>
+                        </a>
+                        <span class="price">600 $</span> 19 май<br>
+                        Одесса, Малиновский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">24</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-zhiguli-4-na-gazu-IDI5heg.html#1611e910c9;promoted"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/wvq9wh2vgbuv-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам жигули 4 на газу!</h4>
+                        </a>
+                        <span class="price">1 100 $</span> 19 май<br>
+                        Одесса, Киевский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">25</span>
+                        <a href="https://www.olx.ua/obyavlenie/tavriya-pikap-IDI5ej0.html#1611e910c9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/fn24ir1eohuc1-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Таврия пикап</h4>
+                        </a>
+                        <span class="price">1 193 $</span> 19 май<br>
+                        Измаил
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">26</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-IDI5aL4.html#1611e910c9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/flm4xfey7gkt2-UA/image;s=644x461;r=270"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам</h4>
+                        </a>
+                        <span class="price">1 150 $</span> 19 май<br>
+                        Одесса, Суворовский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">27</span>
+                        <a href="https://www.olx.ua/obyavlenie/hyundai-veloster-2012-IDHWIzN.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/t4gm9hlxs7d3-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>HYUNDAI Veloster 2012</h4>
+                        </a>
+                        <span class="price">1 100 $</span> 19 май<br>
+                        Одесса, Киевский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">28</span>
+                        <a href="https://www.olx.ua/obyavlenie/dodge-dart-sxt-2013-IDHWGl2.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/ykqupduo9hwt1-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>DODGE Dart SXT 2013</h4>
+                        </a>
+                        <span class="price">1 200 $</span> 19 май<br>
+                        Одесса, Киевский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">29</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-IDI4Lgf.html#1611e910c9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/8puq08cq2mxg2-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>продам</h4>
+                        </a>
+                        <span class="price">1 100 $</span> 19 май<br>
+                        Котовск
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">30</span>
+                        <a href="https://www.olx.ua/obyavlenie/mazda-3-mazda-3-2013-IDHZRTv.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/kn3b1ze6jydm2-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Мазда 3 MAZDA 3 2013</h4>
+                        </a>
+                        <span class="price">1 000 $</span> 18 май<br>
+                        Одесса, Приморский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">31</span>
+                        <a href="https://www.olx.ua/obyavlenie/zaz-1140-IDI4BKA.html#1611e910c9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/m4qgc4q9srel3-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Заз 1140</h4>
+                        </a>
+                        <span class="price">932 $</span> 18 май<br>
+                        Котовск
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">32</span>
+                        <a href="https://www.olx.ua/obyavlenie/mers-220-bombovoz-mehanika-dizel-IDI4zxb.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/t1w0me8umtrf3-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Мерс 220 бомбовоз , механика , дизель</h4>
+                        </a>
+                        <span class="price">1 200 $</span> 18 май<br>
+                        Белгород-Днестровский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">33</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-tavriya-pikap-110557-IDI4xiy.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/d4lievygy0hl2-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам Таврия Пикап 110557</h4>
+                        </a>
+                        <span class="price">1 193 $</span> 18 май<br>
+                        Одесса, Малиновский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">34</span>
+                        <a href="https://www.olx.ua/obyavlenie/kia-rio-ex-2013-IDHUVZp.html#1611e910c9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/gemsnrl23zrz-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Kia RIO EX 2013</h4>
+                        </a>
+                        <span class="price">1 200 $</span> 18 май<br>
+                        Одесса, Киевский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">35</span>
+                        <a href="https://www.olx.ua/obyavlenie/vaz-2107-IDHJV6g.html#1611e910c9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/3qe4geg344u23-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">1 150 $</span> 18 май<br>
+                        Котовск
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">36</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-daewoo-nexia-IDI4dRo.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/60fszyd2ewn01-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам Daewoo Nexia</h4>
+                        </a>
+                        <span class="price">550 $</span> 18 май<br>
+                        Одесса, Киевский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">37</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodazha-avtomobilya-IDI48hm.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/w5a22r9j8xir3-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продажа автомобиля</h4>
+                        </a>
+                        <span class="price">1 000 $</span> 18 май<br>
+                        Килия
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">38</span>
+                        <a href="https://www.olx.ua/obyavlenie/chery-qq-cheri-kyu-kyu-IDHjS1G.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/d0lnkg448h4j-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Chery QQ Чери кю кю</h4>
+                        </a>
+                        <span class="price">932 $</span> 18 май<br>
+                        Ильичевка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">39</span>
+                        <a href="https://www.olx.ua/obyavlenie/hyundai-elantra-se-hyunday-elantra-2016-IDI3WK3.html#1611e910c9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/2nz5sdc1mvif1-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Hyundai Elantra SE Хюндай Элантра 2016</h4>
+                        </a>
+                        <span class="price">1 200 $</span> 17 май<br>
+                        Одесса, Приморский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">40</span>
+                        <a href="https://www.olx.ua/obyavlenie/toyota-scion-tc-toyota-2010-IDI3UZ9.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/i6m7blw4qmud-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Toyota Scion TC Тойота 2010</h4>
+                        </a>
+                        <span class="price">800 $</span> 17 май<br>
+                        Одесса, Приморский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">41</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-volkswagen-tiguan-4motion-sport-IDGOY1G.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/ddy0ozo5y7r61-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам Volkswagen Tiguan 4MOTION SPORT</h4>
+                        </a>
+                        <span class="price">690 $</span> 17 май<br>
+                        Белгород-Днестровский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">42</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-IDI3wxh.html#c01a023142" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/yz72437cl18b1-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам</h4>
+                        </a>
+                        <span class="price">900 $</span> 17 май<br>
+                        Татарбунары
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">43</span>
+                        <a href="https://www.olx.ua/obyavlenie/gaz-31029-1996god-IDHkkDO.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/2b3xes1xl6is2-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ГАЗ 31029 1996год</h4>
+                        </a>
+                        <span class="price">1 006 $</span> 17 май<br>
+                        Одесса, Киевский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">44</span>
+                        <a href="https://www.olx.ua/obyavlenie/volga-gaz-2410-IDGP6ze.html#c01a023142" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/7b5v7s9x7cc62-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Волга Газ-2410</h4>
+                        </a>
+                        <span class="price">800 $</span> 17 май<br>
+                        Крыжановка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">45</span>
+                        <a href="https://www.olx.ua/obyavlenie/opel-vectra-b-IDI3jBY.html#c01a023142" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/tvvd8nlmvs6g3-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Opel Vectra b</h4>
+                        </a>
+                        <span class="price">1 000 $</span> 16 май<br>
+                        Сарата
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">46</span>
+                        <a href="https://www.olx.ua/obyavlenie/volvo-v40-avtomobil-avtomat-universal-IDHZyBW.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/k9xz8aymg9eg1-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Volvo v40 Автомобиль автомат универсал</h4>
+                        </a>
+                        <span class="price">1 100 $</span> 16 май<br>
+                        Белгород-Днестровский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">47</span>
+                        <a href="https://www.olx.ua/obyavlenie/tavriya-IDGzZCt.html#c01a023142" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/2crvmq7lsib71-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Таврия</h4>
+                        </a>
+                        <span class="price">1 000 $</span> 16 май<br>
+                        Нерубайское
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">48</span>
+                        <a href="https://www.olx.ua/obyavlenie/foltsvagen-dzhetta-volkswagen-jetta-2010-IDI2QHG.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/ajpkb3b2l82d-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Фольцваген Джетта VOLKSWAGEN JETTA 2010</h4>
+                        </a>
+                        <span class="price">700 $</span> 16 май<br>
+                        Одесса, Приморский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">49</span>
+                        <a href="https://www.olx.ua/obyavlenie/foltsvagen-passat-volkswagen-passat-2010-IDI2Qj7.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/3y5sklq2zeiq-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Фольцваген Пассат VOLKSWAGEN PASSAT 2010</h4>
+                        </a>
+                        <span class="price">800 $</span> 16 май<br>
+                        Одесса, Приморский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">50</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-daewoo-lanos-IDI2JTM.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/pekcnarlkimb3-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам Daewoо Lanos</h4>
+                        </a>
+                        <span class="price">1 200 $</span> 16 май<br>
+                        Тарутино
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">51</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-motory-vaz-IDHIBjE.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/6jyw25zmsi982-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам моторы ВАЗ</h4>
+                        </a>
+                        <span class="price">186 $</span> 15 май<br>
+                        Красноселка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">52</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-kapot-b-u-dlya-ford-mustang-2018-IDI2DYQ.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/sy7hf0e8k1ts1-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам капот б.у. для Форд Мустанг 2018</h4>
+                        </a>
+                        <span class="price">261 $</span> 15 май<br>
+                        Одесса, Суворовский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">53</span>
+                        <a href="https://www.olx.ua/obyavlenie/daihatsu-l201-grand-move-yrv-cuore-IDGVXu2.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/kxyvxrvo356p3-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Daihatsu l201 Grand Move,yrv,Cuore</h4>
+                        </a>
+                        <span class="price">450 $</span> 15 май<br>
+                        Одесса, Киевский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">54</span>
+                        <a href="https://www.olx.ua/obyavlenie/kia-forte-ex-kia-2013-IDHY2Gg.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/rplihvqhcvek2-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Kia Forte EX Киа 2013</h4>
+                        </a>
+                        <span class="price">950 $</span> 15 май<br>
+                        Одесса, Приморский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">55</span>
+                        <a href="https://www.olx.ua/obyavlenie/mersedes-vito-638-IDEe7tg.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/p6qx2yd83f033-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Мерседес вито 638</h4>
+                        </a>
+                        <span class="price">1 200 $</span> 15 май<br>
+                        Одесса, Киевский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">56</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-trebuet-remonta-IDI2qSP.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/kqt8nqjz9fzr1-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам требует ремонта</h4>
+                        </a>
+                        <span class="price">1 000 $</span> 15 май<br>
+                        Белгород-Днестровский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">57</span>
+                        <a href="https://www.olx.ua/obyavlenie/vaz-2107-IDHu5Yt.html#c01a023142" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/u6mkzm7eofql1-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Ваз 2107</h4>
+                        </a>
+                        <span class="price">950 $</span> 15 май<br>
+                        Михайловка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">58</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-avtomobil-IDDL7r3.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/dclgom9owric1-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам автомобиль</h4>
+                        </a>
+                        <span class="price">1 000 $</span> 15 май<br>
+                        Одесса, Киевский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">59</span>
+                        <a href="https://www.olx.ua/obyavlenie/volvo-v40-avtomat-IDHZytR.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/6244t8e281g01-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Volvo v40 автомат</h4>
+                        </a>
+                        <span class="price">1 100 $</span> 14 май<br>
+                        Белгород-Днестровский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">60</span>
+                        <a href="https://www.olx.ua/obyavlenie/vaz-2107-98goda-gaz-benzin-IDI1YTu.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/2cwzl1ghrgez1-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Ваз 2107 98года газ/бензин</h4>
+                        </a>
+                        <span class="price">990 $</span> 14 май<br>
+                        Барабой
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">61</span>
+                        <a href="https://www.olx.ua/obyavlenie/nissan-kashkay-obmen-IDH31hA.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/n0cjus9a7qi13-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Ниссан Кашкай.обмен</h4>
+                        </a>
+                        <span class="price">1 000 $</span> 14 май<br>
+                        Латовка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">62</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-mashinu-IDI1Wqi.html#c01a023142" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/jjqxw85lr7ms3-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам машину</h4>
+                        </a>
+                        <span class="price">1 100 $</span> 14 май<br>
+                        Одесса, Киевский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">63</span>
+                        <a href="https://www.olx.ua/obyavlenie/kuzov-s-dokumentami-IDHg1Rx.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/rmw97xd5ej1r3-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Кузов с документами</h4>
+                        </a>
+                        <span class="price">250 $</span> 14 май<br>
+                        Одесса, Киевский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">64</span>
+                        <a href="https://www.olx.ua/obyavlenie/audi-a6c5-2-4-gbo-4-IDFKx5F.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/o8m7oac4b8wu3-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Audi a6c5 2.4 ГБО-4</h4>
+                        </a>
+                        <span class="price">899 $</span> 14 май<br>
+                        Одесса, Малиновский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">65</span>
+                        <a href="https://www.olx.ua/obyavlenie/vykup-avto-na-evro-nomerah-IDI1JfS.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/g35xwjwek6ib-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Выкуп авто на евро-номерах.</h4>
+                        </a>
+                        <span class="price">1 000 $</span> 14 май<br>
+                        Одесса, Малиновский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">66</span>
+                        <a href="https://www.olx.ua/obyavlenie/daewoo-sens-IDI1udj.html#c01a023142" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/fhqrsxghxgjy1-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Daewoo Sens</h4>
+                        </a>
+                        <span class="price">650 $</span> 14 май<br>
+                        Одесса, Малиновский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">67</span>
+                        <a href="https://www.olx.ua/obyavlenie/vaz-2107-2004-g-v-IDH0oiU.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/6t7mf3efnyiu2-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Ваз 2107...2004 г.в.</h4>
+                        </a>
+                        <span class="price">950 $</span> 14 май<br>
+                        Одесса, Приморский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">68</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-gidroblok-mercedes-benz-IDI1844.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/ny7lzwa5xzke2-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам гидроблок Mercedes-Benz</h4>
+                        </a>
+                        <span class="price">485 $</span> 13 май<br>
+                        Кучурган
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">69</span>
+                        <a href="https://www.olx.ua/obyavlenie/alfa-romeo-156-IDI17Xq.html#c01a023142" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/5xxhnfd69f8j3-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Альфа ромео 156</h4>
+                        </a>
+                        <span class="price">490 $</span> 13 май<br>
+                        Одесса, Малиновский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">70</span>
+                        <a href="https://www.olx.ua/obyavlenie/shevrole-evanda-IDHywMK.html#c01a023142" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/hol0t2z7bmbn2-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Шевроле Эванда</h4>
+                        </a>
+                        <span class="price">700 $</span> 13 май<br>
+                        Одесса, Малиновский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">71</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-tavriyu-IDI0XaY.html#c01a023142" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/3gku54pjbhhh1-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам таврию</h4>
+                        </a>
+                        <span class="price">745 $</span> 13 май<br>
+                        Одесса, Суворовский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">72</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-zhiguli-IDFvagb.html#c01a023142" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/nw8njxcpidmo-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам жигули</h4>
+                        </a>
+                        <span class="price">1 200 $</span> 13 май<br>
+                        Черноморск
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">73</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-vaz-2107-IDGQ4gj.html#c01a023142" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/mhlipt2l7ns82-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">1 100 $</span> 11 май<br>
+                        Теплица
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">74</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-zaz-1102-IDHZK3o.html#c01a023142" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/cdhbnr18lm193-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам ЗАЗ 1102</h4>
+                        </a>
+                        <span class="price">1 100 $</span> 11 май<br>
+                        Одесса, Малиновский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">75</span>
+                        <a href="https://www.olx.ua/obyavlenie/opel-vectra-b-1-6-posle-remonta-IDGR2dF.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/o46rzw7xxa1r-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Opel vectra b 1.6 после ремонта</h4>
+                        </a>
+                        <span class="price">1 000 $</span> 11 май<br>
+                        Новоукраинка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">76</span>
+                        <a href="https://www.olx.ua/obyavlenie/prdam-obmen-IDGJl73.html#c01a023142" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/2pi6bazrzig61-UA/image;s=644x461;r=270"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Прдам обмен</h4>
+                        </a>
+                        <span class="price">1 118 $</span> 11 май<br>
+                        Латовка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">77</span>
+                        <a href="https://www.olx.ua/obyavlenie/opel-astra-f-po-chastyam-1-6-monoinzh-97g-v-IDHZhQl.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/yrpj6tqjgv7s2-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>опель астра f по частям 1.6 моноинж.97г.в.</h4>
+                        </a>
+                        <span class="price">753 $</span> 11 май<br>
+                        Одесса, Малиновский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">78</span>
+                        <a href="https://www.olx.ua/obyavlenie/vaz-21-po-zapchastyam-IDHYPA7.html#c01a023142"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/c4lqnx1l9rq61-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ВАЗ 21 по запчастям</h4>
+                        </a>
+                        <span class="price">149 $</span> 10 май<br>
+                        Болград
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">79</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-bmv-525-m57-IDHhgix.html#9207aa9cb9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/46r28hjpi3cj-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам БМВ 525 М57</h4>
+                        </a>
+                        <span class="price">600 $</span> 9 май<br>
+                        Рени
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">80</span>
+                        <a href="https://www.olx.ua/obyavlenie/moped-skuter-prodam-IDHYvUK.html#9207aa9cb9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/ma4mo8blinyd-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Мопед, скутер, продам!</h4>
+                        </a>
+                        <span class="price">242 $</span> 9 май<br>
+                        Измаил
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">81</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-bmw-IDHYna4.html#9207aa9cb9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/zikzjoo3eqg71-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам BMW</h4>
+                        </a>
+                        <span class="price">1 150 $</span> 9 май<br>
+                        Вилково
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">82</span>
+                        <a href="https://www.olx.ua/obyavlenie/dodge-journey-dodzh-zhorney-800ue-IDHE1jh.html#9207aa9cb9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/goofd2tvpjqv2-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Dodge Journey Додж Жорней 800уе</h4>
+                        </a>
+                        <span class="price">800 $</span> 9 май<br>
+                        Одесса, Малиновский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">83</span>
+                        <a href="https://www.olx.ua/obyavlenie/avto-evro-blyahi-razbor-IDDyWRy.html#9207aa9cb9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/i7fvdplh277s-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Авто-евро-бляхи-разбор</h4>
+                        </a>
+                        <span class="price">497 $</span> 8 май<br>
+                        Великодолинское
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">84</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-avtomobil-zaz-slavutu-IDHXYCy.html#9207aa9cb9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/ifbtgcqgseqm-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам автомобиль Заз Славуту</h4>
+                        </a>
+                        <span class="price">1 174 $</span> 8 май<br>
+                        Беляевка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">85</span>
+                        <a href="https://www.olx.ua/obyavlenie/opel-vectra-b-ne-na-hodu-na-zapchasti-prodayu-IDFdJwW.html#9207aa9cb9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/ja0sfljakpwp-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Opel vectra b НЕ НА ХОДУ!НА ЗАПЧАСТИ!продаю</h4>
+                        </a>
+                        <span class="price">600 $</span> 8 май<br>
+                        Одесса, Киевский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">86</span>
+                        <a href="https://www.olx.ua/obyavlenie/vaz-2107-IDHD0Hn.html#9207aa9cb9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/lmcvyrcdpd6d2-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Ваз 2107</h4>
+                        </a>
+                        <span class="price">800 $</span> 8 май<br>
+                        Молога
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">87</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-ne-dorogo-200-IDHD0YO.html#9207aa9cb9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/8snyojz54bwq-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам не дорого 200$</h4>
+                        </a>
+                        <span class="price">373 $</span> 7 май<br>
+                        Одесса, Малиновский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">88</span>
+                        <a href="https://www.olx.ua/obyavlenie/ne-na-hodu-vse-voprosy-v-telefonu-bez-torg-IDHXh1A.html#9207aa9cb9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/95tm4x1f9s6g3-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Не на ходу все вопросы в телефону без торг</h4>
+                        </a>
+                        <span class="price">500 $</span> 7 май<br>
+                        Одесса, Малиновский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">89</span>
+                        <a href="https://www.olx.ua/obyavlenie/reno-9-IDv5aB6.html#9207aa9cb9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/p6d2gin7vmc4-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Рено 9</h4>
+                        </a>
+                        <span class="price">373 $</span> 7 май<br>
+                        Степное
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">90</span>
+                        <a href="https://www.olx.ua/obyavlenie/volga-3110-IDHBPaM.html#9207aa9cb9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/gxw75tswl70r-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Волга 3110</h4>
+                        </a>
+                        <span class="price">550 $</span> 6 май<br>
+                        Фонтанка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">91</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-vaz-2104-IDHVCUC.html#9207aa9cb9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/35xi4ahmxp911-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам Ваз 2104</h4>
+                        </a>
+                        <span class="price">1 050 $</span> 6 май<br>
+                        Одесса, Приморский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">92</span>
+                        <a href="https://www.olx.ua/obyavlenie/izh-2717-pikap-IDGgXnG.html#9207aa9cb9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/nctrb9x9v20i1-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ИЖ 2717 пикап</h4>
+                        </a>
+                        <span class="price">969 $</span> 6 май<br>
+                        Белгород-Днестровский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">93</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-pezho-karsan-IDHfAHD.html#9207aa9cb9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/tc5vwnvq8jwp2-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам пежо карсан</h4>
+                        </a>
+                        <span class="price">559 $</span> 6 май<br>
+                        Южное
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">94</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-vaz-2107-IDGQvVk.html#9207aa9cb9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/oasof60hpmx21-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">600 $</span> 6 май<br>
+                        Одесса, Киевский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">95</span>
+                        <a href="https://www.olx.ua/obyavlenie/prodam-blyahu-IDHBPx0.html#9207aa9cb9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/11xy84mmxxoi3-UA/image;s=644x461;r=270"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Продам бляху</h4>
+                        </a>
+                        <span class="price">700 $</span> 6 май<br>
+                        Болград
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">96</span>
+                        <a href="https://www.olx.ua/obyavlenie/tavriya-IDGzYU3.html#9207aa9cb9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/38rd4b21p2le3-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Таврия</h4>
+                        </a>
+                        <span class="price">1 000 $</span> 6 май<br>
+                        Нерубайское
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">97</span>
+                        <a href="https://www.olx.ua/obyavlenie/tavriya-zaz-IDGr2rZ.html#9207aa9cb9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/3ogaf607nfww1-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Таврия заз</h4>
+                        </a>
+                        <span class="price">950 $</span> 6 май<br>
+                        Одесса, Малиновский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">98</span>
+                        <a href="https://www.olx.ua/obyavlenie/dvigatel-korobka-IDHWTA5.html#9207aa9cb9"
+                            target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/gv2e7mkxavcp1-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Двигатель +коробка</h4>
+                        </a>
+                        <span class="price">250 $</span> 5 май<br>
+                        Дмитровка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">99</span>
+                        <a href="https://www.olx.ua/obyavlenie/mazda-323-IDHWQf3.html#9207aa9cb9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/gfnlsmrimlq72-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Mazda 323</h4>
+                        </a>
+                        <span class="price">1 200 $</span> 5 май<br>
+                        Нерубайское
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">100</span>
+                        <a href="https://www.olx.ua/obyavlenie/zaz-tavriya-IDHWH7K.html#9207aa9cb9" target="_blank">
+                            <img src="https://ireland.apollo.olxcdn.com:443/v1/files/o4bwe3x70x4o1-UA/image;s=644x461"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ЗАЗ, таврия</h4>
+                        </a>
+                        <span class="price">1 000 $</span> 5 май<br>
+                        Одесса, Киевский
+                    </div>
+
                 </div>
-            </div>
-            <hr>
-            <div class="footer autoria"></div>
-        </section>
+                <hr>
+                <div class="footer olx"></div>
+            </section>
+            <section class="cars">
+                <h2 class="title autoria">Авто на сайте Autoria</h2>
+                <hr>
+                <div class="content autoria">
+
+                    <div class="item">
+                        <span class="counter">1</span>
+                        <a href="https://auto.ria.com/auto_vaz_2104_26963038.html" target="_blank">
+                            <img src="https://cdn3.riastatic.com/photosnew/auto/photo/vaz_2104__331212783bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ВАЗ 2104 1995</h4>
+                        </a>
+                        <span class="price">1 000 $ </span> 14.05.2020<br>
+                        Одесса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">2</span>
+                        <a href="https://auto.ria.com/auto_zaz_1103_slavuta_26976812.html" target="_blank">
+                            <img src="https://cdn4.riastatic.com/photosnew/auto/photo/zaz_1103-slavuta__330443564bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ЗАЗ 1103 Славута 2005</h4>
+                        </a>
+                        <span class="price">1 199 $ </span> 16.05.2020<br>
+                        Захарьевка (Фрунзовка)
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">3</span>
+                        <a href="https://auto.ria.com/auto_daewoo_tico_27016070.html" target="_blank">
+                            <img src="https://cdn4.riastatic.com/photosnew/auto/photo/daewoo_tico__331323074bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Daewoo Tico 1997</h4>
+                        </a>
+                        <span class="price">400 $ </span> 21.05.2020<br>
+                        Одесса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">4</span>
+                        <a href="https://auto.ria.com/auto_vaz_2107_27009242.html" target="_blank">
+                            <img src="https://cdn4.riastatic.com/photosnew/auto/photo/vaz_2107__331168069bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ВАЗ 2107 2003</h4>
+                        </a>
+                        <span class="price">1 200 $ </span> 20.05.2020<br>
+                        Подольск (Котовск)
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">5</span>
+                        <a href="https://auto.ria.com/auto_zaz_11055_27008926.html" target="_blank">
+                            <img src="https://cdn0.riastatic.com/photosnew/auto/photo/zaz_11055__331159050bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ЗАЗ 11055 2005</h4>
+                        </a>
+                        <span class="price">1 000 $ </span> 20.05.2020<br>
+                        Одесса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">6</span>
+                        <a href="https://auto.ria.com/auto_vaz_2107_27003686.html" target="_blank">
+                            <img src="https://cdn1.riastatic.com/photosnew/auto/photo/vaz_2107__331038991bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ВАЗ 2107 1996</h4>
+                        </a>
+                        <span class="price">1 000 $ </span> 19.05.2020<br>
+                        Белгород-Днестровский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">7</span>
+                        <a href="https://auto.ria.com/auto_opel_vectra_b_27001636.html" target="_blank">
+                            <img src="https://cdn0.riastatic.com/photosnew/auto/photo/opel_vectra-b__330992145bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Opel Vectra B 1998</h4>
+                        </a>
+                        <span class="price">1 200 $ </span> 19.05.2020<br>
+                        Сарата
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">8</span>
+                        <a href="https://auto.ria.com/auto_zaz_11055_26996429.html" target="_blank">
+                            <img src="https://cdn1.riastatic.com/photosnew/auto/photo/zaz_11055__330875561bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ЗАЗ 11055 2005</h4>
+                        </a>
+                        <span class="price">1 200 $ </span> 18.05.2020<br>
+                        Одесса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">9</span>
+                        <a href="https://auto.ria.com/auto_opel_vectra_a_26994292.html" target="_blank">
+                            <img src="https://cdn1.riastatic.com/photosnew/auto/photo/opel_vectra-a__330824841bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Opel Vectra A 1998</h4>
+                        </a>
+                        <span class="price">1 100 $ </span> 18.05.2020<br>
+                        Балта
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">10</span>
+                        <a href="https://auto.ria.com/auto_zaz_11055_25438635.html" target="_blank">
+                            <img src="https://cdn4.riastatic.com/photosnew/auto/photo/zaz_11055__299725714bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ЗАЗ 11055 2003</h4>
+                        </a>
+                        <span class="price">1 190 $ </span> 18.05.2020<br>
+                        Раздельная
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">11</span>
+                        <a href="https://auto.ria.com/auto_zaz_1103_slavuta_26992596.html" target="_blank">
+                            <img src="https://cdn4.riastatic.com/photosnew/auto/photo/zaz_1103-slavuta__330787664bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ЗАЗ 1103 Славута 2004</h4>
+                        </a>
+                        <span class="price">900 $ </span> 18.05.2020<br>
+                        Одесса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">12</span>
+                        <a href="https://auto.ria.com/auto_zaz_1102_tavriya_24782194.html" target="_blank">
+                            <img src="https://cdn1.riastatic.com/photosnew/auto/photo/zaz_1102-tavriya__286753261bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ЗАЗ 1102 Таврия 1995</h4>
+                        </a>
+                        <span class="price">800 $ </span> 18.05.2020<br>
+                        Одесса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">13</span>
+                        <a href="https://auto.ria.com/auto_gaz_3110_21263597.html" target="_blank">
+                            <img src="https://cdn4.riastatic.com/photosnew/auto/photo/gaz_3110__213865119bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ГАЗ 3110 1999</h4>
+                        </a>
+                        <span class="price">1 000 $ </span> 18.05.2020<br>
+                        Измаил
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">14</span>
+                        <a href="https://auto.ria.com/auto_zaz_11055_26490915.html" target="_blank">
+                            <img src="https://cdn4.riastatic.com/photosnew/auto/photo/zaz_11055__319789064bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ЗАЗ 11055 Таврия Пикап 2006</h4>
+                        </a>
+                        <span class="price">1 100 $ </span> 15.05.2020<br>
+                        Измаил
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">15</span>
+                        <a href="https://auto.ria.com/auto_opel_vectra_b_26892175.html" target="_blank">
+                            <img src="https://cdn4.riastatic.com/photosnew/auto/photo/opel_vectra-b__328564419bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Opel Vectra B 74kw 101 л.с 2001</h4>
+                        </a>
+                        <span class="price">1 200 $ </span> 14.05.2020<br>
+                        Одесса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">16</span>
+                        <a href="https://auto.ria.com/auto_zaz_11055_26966146.html" target="_blank">
+                            <img src="https://cdn2.riastatic.com/photosnew/auto/photo/zaz_11055__330173002bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ЗАЗ 11055 2007</h4>
+                        </a>
+                        <span class="price">1 150 $ </span> 14.05.2020<br>
+                        Одесса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">17</span>
+                        <a href="https://auto.ria.com/auto_vaz_2107_21718095.html" target="_blank">
+                            <img src="https://cdn0.riastatic.com/photosnew/auto/photo/vaz_2107__330846960bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ВАЗ 2107 1.5 1997</h4>
+                        </a>
+                        <span class="price">1 000 $ </span> 13.05.2020<br>
+                        Подольск (Котовск)
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">18</span>
+                        <a href="https://auto.ria.com/auto_gaz_3110_17468378.html" target="_blank">
+                            <img src="" alt="Фото авто" class="img-thumbnail">
+                            <h4>ГАЗ 3110 2000</h4>
+                        </a>
+                        <span class="price">1 200 $ </span> 12.05.2020<br>
+                        Одесса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">19</span>
+                        <a href="https://auto.ria.com/auto_renault_master_gruz_24960338.html" target="_blank">
+                            <img src="https://cdn0.riastatic.com/photosnew/auto/photo/renault_master-gruz__290202585bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Renault Master груз. 1997</h4>
+                        </a>
+                        <span class="price">750 $ </span> 10.05.2020<br>
+                        Одесса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">20</span>
+                        <a href="https://auto.ria.com/auto_vaz_2104_26936851.html" target="_blank">
+                            <img src="https://cdn1.riastatic.com/photosnew/auto/photo/vaz_2104__329511216bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ВАЗ 2104 1999</h4>
+                        </a>
+                        <span class="price">1 200 $ </span> 10.05.2020<br>
+                        Теплодар
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">21</span>
+                        <a href="https://auto.ria.com/auto_zaz_1102_tavriya_26754126.html" target="_blank">
+                            <img src="https://cdn1.riastatic.com/photosnew/auto/photo/zaz_1102-tavriya__325743331bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ЗАЗ 1102 Таврия 2007</h4>
+                        </a>
+                        <span class="price">1 200 $ </span> 8.05.2020<br>
+                        Одесса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">22</span>
+                        <a href="https://auto.ria.com/auto_opel_vectra_b_26917351.html" target="_blank">
+                            <img src="https://cdn1.riastatic.com/photosnew/auto/photo/opel_vectra-b__329061081bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Opel Vectra B 1997</h4>
+                        </a>
+                        <span class="price">1 150 $ </span> 6.05.2020<br>
+                        Одесса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">23</span>
+                        <a href="https://auto.ria.com/auto_zaz_11055_25245243.html" target="_blank">
+                            <img src="https://cdn2.riastatic.com/photosnew/auto/photo/zaz_11055__295931007bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ЗАЗ 11055 2006</h4>
+                        </a>
+                        <span class="price">1 100 $ </span> 4.05.2020<br>
+                        Одесса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">24</span>
+                        <a href="https://auto.ria.com/auto_renault_twingo_26895473.html" target="_blank">
+                            <img src="https://cdn4.riastatic.com/photosnew/auto/photo/renault_twingo__328627424bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Renault Twingo 2000</h4>
+                        </a>
+                        <span class="price">1 083 $ </span> 3.05.2020<br>
+                        Одесса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">25</span>
+                        <a href="https://auto.ria.com/auto_zaz_1105_dana_26895357.html" target="_blank">
+                            <img src="https://cdn3.riastatic.com/photosnew/auto/photo/zaz_1105-dana__328624878bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ЗАЗ 1105 Дана 1995</h4>
+                        </a>
+                        <span class="price">1 200 $ </span> 3.05.2020<br>
+                        Одесса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">26</span>
+                        <a href="https://auto.ria.com/auto_zaz_1103_slavuta_26886664.html" target="_blank">
+                            <img src="https://cdn2.riastatic.com/photosnew/auto/photo/zaz_1103-slavuta__328448342bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ЗАЗ 1103 Славута 2005</h4>
+                        </a>
+                        <span class="price">1 200 $ </span> 1.05.2020<br>
+                        Великая Михайловка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">27</span>
+                        <a href="https://auto.ria.com/auto_gaz_3110_26492350.html" target="_blank">
+                            <img src="https://cdn3.riastatic.com/photosnew/auto/photo/gaz_3110__320178928bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ГАЗ 3110 1999</h4>
+                        </a>
+                        <span class="price">600 $ </span> 1.05.2020<br>
+                        Сарата
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">28</span>
+                        <a href="https://auto.ria.com/auto_zaz_1102_tavriya_26882496.html" target="_blank">
+                            <img src="https://cdn2.riastatic.com/photosnew/auto/photo/zaz_1102-tavriya__328357382bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ЗАЗ 1102 Таврия 1995</h4>
+                        </a>
+                        <span class="price">750 $ </span> 1.05.2020<br>
+                        Килия
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">29</span>
+                        <a href="https://auto.ria.com/auto_vaz_2106_26882107.html" target="_blank">
+                            <img src="https://cdn3.riastatic.com/photosnew/auto/photo/vaz_2106__328350078bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ВАЗ 2106 2020</h4>
+                        </a>
+                        <span class="price">737 $ </span> 1.05.2020<br>
+                        Одесса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">30</span>
+                        <a href="https://auto.ria.com/auto_volkswagen_golf_iii_26881015.html" target="_blank">
+                            <img src="https://cdn0.riastatic.com/photosnew/auto/photo/volkswagen_golf-iii__328325465bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Volkswagen Golf III 1996</h4>
+                        </a>
+                        <span class="price">950 $ </span> 30.04.2020<br>
+                        Одесса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">31</span>
+                        <a href="https://auto.ria.com/auto_zaz_1103_slavuta_26880308.html" target="_blank">
+                            <img src="https://cdn4.riastatic.com/photosnew/auto/photo/zaz_1103-slavuta__328310209bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ЗАЗ 1103 Славута 2003</h4>
+                        </a>
+                        <span class="price">1 050 $ </span> 30.04.2020<br>
+                        Саврань
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">32</span>
+                        <a href="https://auto.ria.com/auto_zaz_1102_tavriya_25990282.html" target="_blank">
+                            <img src="https://cdn0.riastatic.com/photosnew/auto/photo/zaz_1102-tavriya__310218930bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ЗАЗ 1102 Таврия пикап 2007</h4>
+                        </a>
+                        <span class="price">1 200 $ </span> 27.04.2020<br>
+                        Одесса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">33</span>
+                        <a href="https://auto.ria.com/auto_zaz_1102_tavriya_26859293.html" target="_blank">
+                            <img src="https://cdn3.riastatic.com/photosnew/auto/photo/zaz_1102-tavriya__327890363bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ЗАЗ 1102 Таврия 2008</h4>
+                        </a>
+                        <span class="price">1 000 $ </span> 27.04.2020<br>
+                        Одесса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">34</span>
+                        <a href="https://auto.ria.com/auto_zaz_1103_slavuta_26182025.html" target="_blank">
+                            <img src="https://cdn4.riastatic.com/photosnew/auto/photo/zaz_1103-slavuta__313979339bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ЗАЗ 1103 Славута 2006</h4>
+                        </a>
+                        <span class="price">1 200 $ </span> 26.04.2020<br>
+                        Черноморск (Ильичевск)
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">35</span>
+                        <a href="https://auto.ria.com/auto_honda_civic_26850372.html" target="_blank">
+                            <img src="https://cdn3.riastatic.com/photosnew/auto/photo/honda_civic__327582923bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Honda Civic 1997</h4>
+                        </a>
+                        <span class="price">1 000 $ </span> 25.04.2020<br>
+                        Черноморск (Ильичевск)
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">36</span>
+                        <a href="https://auto.ria.com/auto_peugeot_206_sw_26848549.html" target="_blank">
+                            <img src="https://cdn2.riastatic.com/photosnew/auto/photo/peugeot_206-sw__327685702bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>Peugeot 206 SW 2004</h4>
+                        </a>
+                        <span class="price">700 $ </span> 25.04.2020<br>
+                        Одесса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">37</span>
+                        <a href="https://auto.ria.com/auto_zaz_1103_slavuta_26831515.html" target="_blank">
+                            <img src="https://cdn2.riastatic.com/photosnew/auto/photo/zaz_1103-slavuta__327321467bx.jpg"
+                                alt="Фото авто" class="img-thumbnail">
+                            <h4>ЗАЗ 1103 Славута 2005</h4>
+                        </a>
+                        <span class="price">800 $ </span> 22.04.2020<br>
+                        Овидиополь
+                    </div>
+
+                </div>
+                <hr>
+                <div class="footer autoria"></div>
+            </section>
+            <section class="cars">
+                <h2 class="title rst">Авто на сайте RST</h2>
+                <hr>
+                <div class="content rst">
+
+                    <div class="item">
+                        <span class="counter">1</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/slavuta/zaz_slavuta_11091735.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/slavuta/middle/11091735-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Славута</h4>
+                        </a>
+                        <span class="price">$1&#x27;200</span> оновлено сьогодні в 10:48<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">2</span>
+                        <a href="//rst.ua/ukr/oldcars/gaz/gazel/gaz_gazel_11190680.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/gaz/gazel/middle/11190680-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ГАЗ Газель</h4>
+                        </a>
+                        <span class="price">$1&#x27;050</span> розміщено сьогодні в 09:23<br>
+                        Измаил
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">3</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria-dana/zaz_tavria-dana_11190537.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/tavria-dana/middle/11190537-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Дана</h4>
+                        </a>
+                        <span class="price">$949</span> розміщено сьогодні в 08:25<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">4</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2107/vaz_2107_11190376.html" target="_blank">
+                            <img src="//i.rst.ua/no-photo.png" alt="Фото авто" class="img-thumbnail">
+                            <h4>продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">$850</span> розміщено сьогодні в 07:20<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">5</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/slavuta/zaz_slavuta_10470643.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/zaz/slavuta/middle/10470643-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Славута</h4>
+                        </a>
+                        <span class="price">$1&#x27;050</span> оновлено вчора в 23:51<br>
+                        Великая Михайловка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">6</span>
+                        <a href="//rst.ua/ukr/oldcars/gaz/volga/gaz_volga_11189672.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/gaz/volga/middle/11189672-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ГАЗ Волга</h4>
+                        </a>
+                        <span class="price">$700</span> розміщено вчора в 21:19<br>
+                        Котовск
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">7</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2107/vaz_2107_10028840.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/vaz/2107/middle/10028840-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">$1&#x27;000</span> оновлено вчора в 20:51<br>
+                        Килия
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">8</span>
+                        <a href="//rst.ua/ukr/oldcars/gaz/volga/gaz_volga_11189509.html" target="_blank">
+                            <img src="//i.rst.ua/no-photo.png" alt="Фото авто" class="img-thumbnail">
+                            <h4>продам ГАЗ Волга</h4>
+                        </a>
+                        <span class="price">$1&#x27;150</span> розміщено вчора в 20:48<br>
+                        Измаил
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">9</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2109/vaz_2109_11188839.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/vaz/2109/middle/11188839-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2109</h4>
+                        </a>
+                        <span class="price">$1&#x27;200</span> розміщено вчора в 18:14<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">10</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria/zaz_tavria_11017777.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/tavria/middle/11017777-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Таврия</h4>
+                        </a>
+                        <span class="price">$1&#x27;200</span> оновлено вчора в 17:48<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">11</span>
+                        <a href="//rst.ua/ukr/oldcars/daewoo/nexia/daewoo_nexia_11188717.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/daewoo/nexia/middle/11188717-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам DAEWOO Nexia</h4>
+                        </a>
+                        <span class="price">$799</span> розміщено вчора в 17:47<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">12</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria/zaz_tavria_11187377.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/tavria/middle/11187377-2.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Таврия</h4>
+                        </a>
+                        <span class="price">$750</span> розміщено вчора в 12:52<br>
+                        Белгород-днестровский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">13</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria/zaz_tavria_10789598.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/tavria/middle/10789598-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Таврия</h4>
+                        </a>
+                        <span class="price">$600</span> оновлено вчора в 11:02<br>
+                        Белгород-днестровский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">14</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2104/vaz_2104_11136219.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/vaz/2104/middle/11136219-3.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2104</h4>
+                        </a>
+                        <span class="price">$1&#x27;200</span> оновлено вчора в 08:32<br>
+                        Теплодар
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">15</span>
+                        <a href="//rst.ua/ukr/oldcars/iz/27175/iz_27175_11186278.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/iz/27175/middle/11186278-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ИЖ 27175</h4>
+                        </a>
+                        <span class="price">$1&#x27;000</span> розміщено вчора в 07:29<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">16</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2104/vaz_2104_11136382.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/vaz/2104/middle/11136382-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2104</h4>
+                        </a>
+                        <span class="price">$1&#x27;000</span> оновлено вчора в 07:11<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">17</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria/zaz_tavria_11133317.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/tavria/middle/11133317-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Таврия</h4>
+                        </a>
+                        <span class="price">$950</span> оновлено 20.05.2020<br>
+                        Фрунзовка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">18</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/slavuta/zaz_slavuta_11142583.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/zaz/slavuta/middle/11142583-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Славута</h4>
+                        </a>
+                        <span class="price">$950</span> оновлено 20.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">19</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria-dana/zaz_tavria-dana_11177144.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/zaz/tavria-dana/middle/11177144-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Дана</h4>
+                        </a>
+                        <span class="price">$1&#x27;100</span> оновлено 20.05.2020<br>
+                        Котовск
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">20</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2106/vaz_2106_10268253.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/vaz/2106/middle/10268253-10.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2106</h4>
+                        </a>
+                        <span class="price">$950</span> оновлено 20.05.2020<br>
+                        Раздельная
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">21</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/slavuta/zaz_slavuta_11103713.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/zaz/slavuta/middle/11103713-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Славута</h4>
+                        </a>
+                        <span class="price">$1&#x27;050</span> оновлено 20.05.2020<br>
+                        Балта
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">22</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria/zaz_tavria_11182511.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/zaz/tavria/middle/11182511-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Таврия</h4>
+                        </a>
+                        <span class="price">$550</span> розміщено 20.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">23</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2107/vaz_2107_11074525.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/vaz/2107/middle/11074525-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">$1&#x27;000</span> оновлено 19.05.2020<br>
+                        Николаевка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">24</span>
+                        <a href="//rst.ua/ukr/oldcars/gaz/gazel/gaz_gazel_11140012.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/gaz/gazel/middle/11140012-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ГАЗ Газель</h4>
+                        </a>
+                        <span class="price">$1&#x27;100</span> оновлено 19.05.2020<br>
+                        Измаил
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">25</span>
+                        <a href="//rst.ua/ukr/oldcars/gaz/volga/gaz_volga_10845217.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/gaz/volga/middle/10845217-2.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ГАЗ Волга</h4>
+                        </a>
+                        <span class="price">$750</span> оновлено 19.05.2020<br>
+                        Южный
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">26</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/slavuta/zaz_slavuta_11024514.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/zaz/slavuta/middle/11024514-2.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Славута</h4>
+                        </a>
+                        <span class="price">$1&#x27;150</span> оновлено 19.05.2020<br>
+                        Татарбунары
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">27</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2107/vaz_2107_10941915.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/vaz/2107/middle/10941915-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">$750</span> оновлено 19.05.2020<br>
+                        Фрунзовка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">28</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2105/vaz_2105_11179172.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/vaz/2105/middle/11179172-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2105</h4>
+                        </a>
+                        <span class="price">$1&#x27;000</span> розміщено 19.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">29</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/slavuta/zaz_slavuta_11083323.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/zaz/slavuta/middle/11083323-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Славута</h4>
+                        </a>
+                        <span class="price">$1&#x27;200</span> оновлено 19.05.2020<br>
+                        Болград
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">30</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2107/vaz_2107_11058985.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/vaz/2107/middle/11058985-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">$900</span> оновлено 19.05.2020<br>
+                        Великодолининское
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">31</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria/zaz_tavria_11149278.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/tavria/middle/11149278-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Таврия</h4>
+                        </a>
+                        <span class="price">$1&#x27;100</span> оновлено 19.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">32</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria/zaz_tavria_11114090.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/zaz/tavria/middle/11114090-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Таврия</h4>
+                        </a>
+                        <span class="price">$1&#x27;100</span> оновлено 18.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">33</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2104/vaz_2104_10697955.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/vaz/2104/middle/10697955-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2104</h4>
+                        </a>
+                        <span class="price">$999</span> оновлено 18.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">34</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria-pickup/zaz_tavria-pickup_11177046.html"
+                            target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/tavria-pickup/middle/11177046-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Таврия-Пикап</h4>
+                        </a>
+                        <span class="price">$1&#x27;200</span> розміщено 18.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">35</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria/zaz_tavria_10298602.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/zaz/tavria/middle/10298602-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Таврия</h4>
+                        </a>
+                        <span class="price">$1&#x27;200</span> оновлено 18.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">36</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/slavuta/zaz_slavuta_11174878.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/slavuta/middle/11174878-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Славута</h4>
+                        </a>
+                        <span class="price">$900</span> розміщено 18.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">37</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2107/vaz_2107_10983723.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/vaz/2107/middle/10983723-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">$1&#x27;200</span> оновлено 18.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">38</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2105/vaz_2105_10121030.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/vaz/2105/middle/10121030-10.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2105</h4>
+                        </a>
+                        <span class="price">$1&#x27;200</span> оновлено 17.05.2020<br>
+                        Ширяево
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">39</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria-dana/zaz_tavria-dana_11172730.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/zaz/tavria-dana/middle/11172730-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Дана</h4>
+                        </a>
+                        <span class="price">$947</span> розміщено 17.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">40</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2107/vaz_2107_11017067.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/vaz/2107/middle/11017067-10.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">$1&#x27;000</span> оновлено 17.05.2020<br>
+                        Теплодар
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">41</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/slavuta/zaz_slavuta_11042113.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/zaz/slavuta/middle/11042113-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Славута</h4>
+                        </a>
+                        <span class="price">$1&#x27;100</span> оновлено 17.05.2020<br>
+                        Котовск
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">42</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2105/vaz_2105_11108601.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/vaz/2105/middle/11108601-7.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2105</h4>
+                        </a>
+                        <span class="price">$650</span> оновлено 17.05.2020<br>
+                        Овидиополь
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">43</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria-dana/zaz_tavria-dana_11169808.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/tavria-dana/middle/11169808-15.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Дана</h4>
+                        </a>
+                        <span class="price">$950</span> розміщено 17.05.2020<br>
+                        Березовка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">44</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2106/vaz_2106_11169823.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/vaz/2106/middle/11169823-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2106</h4>
+                        </a>
+                        <span class="price">$1&#x27;000</span> розміщено 17.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">45</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2107/vaz_2107_11168478.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/vaz/2107/middle/11168478-15.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">$999</span> розміщено 16.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">46</span>
+                        <a href="//rst.ua/ukr/oldcars/opel/zafira/opel_zafira_11167712.html" target="_blank">
+                            <img src="//i.rst.ua/no-photo.png" alt="Фото авто" class="img-thumbnail">
+                            <h4>продам OPEL Zafira</h4>
+                        </a>
+                        <span class="price">не указано</span> розміщено 16.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">47</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2107/vaz_2107_10807461.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/vaz/2107/middle/10807461-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">$1&#x27;100</span> оновлено 16.05.2020<br>
+                        Белгород-днестровский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">48</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2107/vaz_2107_10436355.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/vaz/2107/middle/10436355-4.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">$1&#x27;200</span> оновлено 16.05.2020<br>
+                        Арциз
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">49</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2107/vaz_2107_11106907.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/vaz/2107/middle/11106907-5.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">$1&#x27;200</span> оновлено 16.05.2020<br>
+                        Белгород-днестровский
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">50</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria-pickup/zaz_tavria-pickup_11121462.html"
+                            target="_blank">
+                            <img src="//i1.rst.ua/oldcars/zaz/tavria-pickup/middle/11121462-2.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Таврия-Пикап</h4>
+                        </a>
+                        <span class="price">$1&#x27;150</span> оновлено 15.05.2020<br>
+                        Любашевка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">51</span>
+                        <a href="//rst.ua/ukr/oldcars/mazda/626/mazda_626_11018550.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/mazda/626/middle/11018550-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам MAZDA 626</h4>
+                        </a>
+                        <span class="price">$900</span> оновлено 15.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">52</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2107/vaz_2107_11131757.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/vaz/2107/middle/11131757-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">$945</span> оновлено 15.05.2020<br>
+                        Ширяево
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">53</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2107/vaz_2107_11130729.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/vaz/2107/middle/11130729-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">$1&#x27;150</span> оновлено 14.05.2020<br>
+                        Болград
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">54</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2107/vaz_2107_11161617.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/vaz/2107/middle/11161617-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">$1&#x27;200</span> розміщено 14.05.2020<br>
+                        Сарата
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">55</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria/zaz_tavria_11161374.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/zaz/tavria/middle/11161374-16.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Таврия</h4>
+                        </a>
+                        <span class="price">$900</span> розміщено 14.05.2020<br>
+                        Килия
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">56</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria/zaz_tavria_11107946.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/tavria/middle/11107946-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Таврия</h4>
+                        </a>
+                        <span class="price">$1&#x27;000</span> оновлено 14.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">57</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2107/vaz_2107_11081714.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/vaz/2107/middle/11081714-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">$1&#x27;000</span> оновлено 14.05.2020<br>
+                        Беляевка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">58</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/slavuta/zaz_slavuta_11158712.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/zaz/slavuta/middle/11158712-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Славута</h4>
+                        </a>
+                        <span class="price">$950</span> розміщено 14.05.2020<br>
+                        Коминтерновское
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">59</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2107/vaz_2107_11157709.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/vaz/2107/middle/11157709-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">$1&#x27;200</span> розміщено 13.05.2020<br>
+                        Котовск
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">60</span>
+                        <a href="//rst.ua/ukr/oldcars/gaz/volga/gaz_volga_11034612.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/gaz/volga/middle/11034612-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ГАЗ Волга</h4>
+                        </a>
+                        <span class="price">$900</span> оновлено 13.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">61</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2106/vaz_2106_11156763.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/vaz/2106/middle/11156763-4.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2106</h4>
+                        </a>
+                        <span class="price">$900</span> розміщено 13.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">62</span>
+                        <a href="//rst.ua/ukr/oldcars/iz/2125/iz_2125_11071599.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/iz/2125/middle/11071599-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ИЖ 2125</h4>
+                        </a>
+                        <span class="price">$560</span> оновлено 12.05.2020<br>
+                        Саврань
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">63</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2107/vaz_2107_10675825.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/vaz/2107/middle/10675825-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">$1&#x27;000</span> оновлено 11.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">64</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2109/vaz_2109_11068934.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/vaz/2109/middle/11068934-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2109</h4>
+                        </a>
+                        <span class="price">$1&#x27;200</span> оновлено 11.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">65</span>
+                        <a href="//rst.ua/ukr/oldcars/kia/besta/kia_besta_11148038.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/kia/besta/middle/11148038-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам KIA Besta</h4>
+                        </a>
+                        <span class="price">$900</span> розміщено 11.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">66</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/slavuta/zaz_slavuta_11082427.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/slavuta/middle/11082427-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Славута</h4>
+                        </a>
+                        <span class="price">$1&#x27;100</span> оновлено 11.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">67</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/slavuta/zaz_slavuta_11145460.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/zaz/slavuta/middle/11145460-10.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Славута</h4>
+                        </a>
+                        <span class="price">$900</span> розміщено 10.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">68</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2107/vaz_2107_11145370.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/vaz/2107/middle/11145370-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">$900</span> розміщено 10.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">69</span>
+                        <a href="//rst.ua/ukr/oldcars/gaz/gazel/gaz_gazel_10865046.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/gaz/gazel/middle/10865046-4.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ГАЗ Газель</h4>
+                        </a>
+                        <span class="price">$920</span> оновлено 10.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">70</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/slavuta/zaz_slavuta_10984605.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/slavuta/middle/10984605-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Славута</h4>
+                        </a>
+                        <span class="price">$850</span> оновлено 09.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">71</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2104/vaz_2104_11155020.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/vaz/2104/middle/11155020-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2104</h4>
+                        </a>
+                        <span class="price">$1&#x27;000</span> розміщено 09.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">72</span>
+                        <a href="//rst.ua/ukr/oldcars/moscvich/412/moscvich_412_10493305.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/moscvich/412/middle/10493305-2.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам МОСКВИЧ 412</h4>
+                        </a>
+                        <span class="price">$450</span> оновлено 08.05.2020<br>
+                        Фрунзовка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">73</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/slavuta/zaz_slavuta_10917335.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/slavuta/middle/10917335-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Славута</h4>
+                        </a>
+                        <span class="price">$1&#x27;200</span> оновлено 08.05.2020<br>
+                        Фрунзовка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">74</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria/zaz_tavria_11137068.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/tavria/middle/11137068-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Таврия</h4>
+                        </a>
+                        <span class="price">$900</span> розміщено 07.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">75</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria-dana/zaz_tavria-dana_9657917.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/tavria-dana/middle/9657917-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Дана 1105</h4>
+                        </a>
+                        <span class="price">$990</span> оновлено 07.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">76</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/slavuta/zaz_slavuta_8172587.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/slavuta/middle/8172587-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Славута</h4>
+                        </a>
+                        <span class="price">$1&#x27;000</span> оновлено 07.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">77</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/slavuta/zaz_slavuta_11074960.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/zaz/slavuta/middle/11074960-6.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Славута</h4>
+                        </a>
+                        <span class="price">$1&#x27;000</span> оновлено 06.05.2020<br>
+                        Теплодар
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">78</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria/zaz_tavria_11131163.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/zaz/tavria/middle/11131163-2.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Таврия</h4>
+                        </a>
+                        <span class="price">$550</span> розміщено 06.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">79</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2106/vaz_2106_11128796.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/vaz/2106/middle/11128796-3.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2106</h4>
+                        </a>
+                        <span class="price">$1&#x27;150</span> розміщено 05.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">80</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/oka/vaz_oka_10960530.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/vaz/oka/middle/10960530-3.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ Ока</h4>
+                        </a>
+                        <span class="price">$800</span> оновлено 04.05.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">81</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2109/vaz_2109_11118351.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/vaz/2109/middle/11118351-6.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2109</h4>
+                        </a>
+                        <span class="price">$1&#x27;150</span> розміщено 02.05.2020<br>
+                        Сарата
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">82</span>
+                        <a href="//rst.ua/ukr/oldcars/gaz/volga/gaz_volga_11019222.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/gaz/volga/middle/11019222-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ГАЗ Волга</h4>
+                        </a>
+                        <span class="price">$650</span> оновлено 01.05.2020<br>
+                        Раздельная
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">83</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria/zaz_tavria_11113709.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/tavria/middle/11113709-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Таврия</h4>
+                        </a>
+                        <span class="price">$700</span> розміщено 01.05.2020<br>
+                        Килия
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">84</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/slavuta/zaz_slavuta_11112218.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/slavuta/middle/11112218-2.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Славута</h4>
+                        </a>
+                        <span class="price">$1&#x27;050</span> розміщено 30.04.2020<br>
+                        Саврань
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">85</span>
+                        <a href="//rst.ua/ukr/oldcars/daewoo/tico/daewoo_tico_11070377.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/daewoo/tico/middle/11070377-6.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам DAEWOO Tico</h4>
+                        </a>
+                        <span class="price">$1&#x27;100</span> оновлено 26.04.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">86</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2105/vaz_2105_11083750.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/vaz/2105/middle/11083750-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2105</h4>
+                        </a>
+                        <span class="price">$1&#x27;200</span> оновлено 23.04.2020<br>
+                        Болград
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">87</span>
+                        <a href="//rst.ua/ukr/oldcars/daewoo/tico/daewoo_tico_11086872.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/daewoo/tico/middle/11086872-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам DAEWOO Tico</h4>
+                        </a>
+                        <span class="price">$1&#x27;000</span> розміщено 23.04.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">88</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/slavuta/zaz_slavuta_11121042.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/zaz/slavuta/middle/11121042-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Славута</h4>
+                        </a>
+                        <span class="price">$1&#x27;200</span> розміщено 22.04.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">89</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2106/vaz_2106_11084695.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/vaz/2106/middle/11084695-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2106</h4>
+                        </a>
+                        <span class="price">$1&#x27;100</span> розміщено 22.04.2020<br>
+                        Березовка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">90</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2106/vaz_2106_10991933.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/vaz/2106/middle/10991933-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2106</h4>
+                        </a>
+                        <span class="price">$1&#x27;200</span> оновлено 21.04.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">91</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2107/vaz_2107_10766944.html" target="_blank">
+                            <img src="//i.rst.ua/no-photo.png" alt="Фото авто" class="img-thumbnail">
+                            <h4>продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">$850</span> оновлено 21.04.2020<br>
+                        Болград
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">92</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria/zaz_tavria_10930115.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/tavria/middle/10930115-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Таврия</h4>
+                        </a>
+                        <span class="price">$1&#x27;000</span> оновлено 20.04.2020<br>
+                        Затишье
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">93</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2107/vaz_2107_11024135.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/vaz/2107/middle/11024135-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2107</h4>
+                        </a>
+                        <span class="price">$800</span> оновлено 20.04.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">94</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/slavuta/zaz_slavuta_9950607.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/slavuta/middle/9950607-4.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Славута</h4>
+                        </a>
+                        <span class="price">$999</span> оновлено 13.04.2020<br>
+                        Рени
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">95</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/slavuta/zaz_slavuta_11054725.html" target="_blank">
+                            <img src="//i0.rst.ua/oldcars/zaz/slavuta/middle/11054725-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Славута</h4>
+                        </a>
+                        <span class="price">$1&#x27;050</span> розміщено 12.04.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">96</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2104/vaz_2104_11053874.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/vaz/2104/middle/11053874-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ВАЗ 2104</h4>
+                        </a>
+                        <span class="price">$1&#x27;200</span> розміщено 12.04.2020<br>
+                        Любашевка
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">97</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria/zaz_tavria_10922593.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/zaz/tavria/middle/10922593-1.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Таврия</h4>
+                        </a>
+                        <span class="price">$950</span> оновлено 12.04.2020<br>
+                        Балта
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">98</span>
+                        <a href="//rst.ua/ukr/oldcars/vaz/2104/vaz_2104_10830060.html" target="_blank">
+                            <img src="//i.rst.ua/no-photo.png" alt="Фото авто" class="img-thumbnail">
+                            <h4>продам ВАЗ 2104</h4>
+                        </a>
+                        <span class="price">$1&#x27;100</span> оновлено 12.04.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">99</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/slavuta/zaz_slavuta_10945234.html" target="_blank">
+                            <img src="//i1.rst.ua/oldcars/zaz/slavuta/middle/10945234-6.jpg" alt="Фото авто"
+                                class="img-thumbnail">
+                            <h4>продам ЗАЗ Славута</h4>
+                        </a>
+                        <span class="price">$800</span> оновлено 12.04.2020<br>
+                        Одеса
+                    </div>
+
+                    <div class="item">
+                        <span class="counter">100</span>
+                        <a href="//rst.ua/ukr/oldcars/zaz/tavria/zaz_tavria_11048911.html" target="_blank">
+                            <img src="//i.rst.ua/no-photo.png" alt="Фото авто" class="img-thumbnail">
+                            <h4>продам ЗАЗ Таврия</h4>
+                        </a>
+                        <span class="price">$750</span> оновлено 11.04.2020<br>
+                        Одеса
+                    </div>
+
+                </div>
+                <hr>
+                <div class="footer rst"></div>
+            </section>
+        </aside>
+
     </div>
 </body>
 

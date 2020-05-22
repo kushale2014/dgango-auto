@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<aside class="center-side">
+    {% for car_sect in cars %}
+    <section class="cars">
+        <h2 class="title {{car_sect}}">Авто на сайте {{car_sect}}</h2>
+        <hr>
+        <div class="content {{car_sect}}">
+            {% for car in car_sect %}
+            <div class="item">
+                <span class="counter">{{ forloop.counter }}</span>
+                <a href="{{car.href}}" target="_blank">
+                    <img src="{{car.img}}" alt="Фото авто" class="img-thumbnail">
+                    <h4>{{car.title}}</h4>
+                </a>
+                <span class="price">{{car.price_S}}</span> {{car.date}}<br>
+                {{car.place}}
+            </div>
+            {% endfor %}
+        </div>
+        <hr>
+        <div class="footer {{car_sect}}"></div>
+    </section>
+    {% endfor %}
+</aside>
+{% endblock content %}

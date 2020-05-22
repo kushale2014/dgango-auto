@@ -1,15 +1,16 @@
 from django.shortcuts import render
-from mainapp.get_cars import get_olx, get_autoria, get_rst
-
-count_cars = 100
+from mainapp.get_cars import get_cars
 
 
 def index(request):
-    olx = get_olx(count_cars)
-    autoria = get_autoria(count_cars)
-    rst = get_rst(count_cars)
+    # olx = get_olx(count_cars)
+    # autoria = get_autoria(count_cars)
+    # rst = get_rst(count_cars)
+    params = {
+        'count_cars': 100,
+        'price2': 1200,
+        'year1': 1995,
+    }
     return render(request, 'mainapp/index.html', {
-        'olx': olx,
-        'autoria': autoria,
-        'rst': rst,
+        'cars': get_cars(params),
     })
