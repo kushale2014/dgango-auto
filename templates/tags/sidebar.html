@@ -1,0 +1,64 @@
+{% load auto_tag %}
+<div class="sidenav">
+    <form action="{% url 'index' %}" method="post">
+        {% csrf_token %}
+        <p>
+            <label for="f_price1" class="price_label">Цена</label>
+            <select name="price1" id="f_price1">
+                <option value="0" {% if 'price1' not in params %}selected="selected" {%endif%} style="color:#CCC;">
+                    от</option>
+                {% for price in prices %}
+                <option value="{{price}}" {% if params.price1 == price|stringformat:"i" %}selected="selected" {%endif%}>
+                    {{price|to_price}}
+                </option>
+                {% endfor %}
+            </select> $
+            <br><label class="price_label"></label>
+            <select name="price2" id="f_price2">
+                <option value="0" {% if 'price2' not in params %}selected="selected" {%endif%} style="color:#CCC;">
+                    до</option>
+                {% for price in prices %}
+                <option value="{{price}}" {% if params.price2 == price|stringformat:"i" %}selected="selected" {%endif%}>
+                    {{price|to_price}}
+                </option>
+                {% endfor %}
+            </select> $
+        </p>
+        <p>
+            <label for="f_year1">Год</label>
+            <select name="year1" id="f_year1">
+                <option value="0" {% if 'year1' not in params %}selected="selected" {%endif%} style="color:#CCC;">
+                    от</option>
+                {% for year in years %}
+                <option value="{{year}}" {% if params.year1 == year|stringformat:"i" %}selected="selected" {%endif%}>
+                    {{year}}</option>
+                {% endfor %}
+            </select>
+            <label>-</label>
+            <select name="year2" id="f_year2">
+                <option value="0" {% if 'year2' not in params %}selected="selected" {%endif%} style="color:#CCC;">
+                    до</option>
+                {% for year in years %}
+                <option value="{{year}}" {% if params.year2 == year|stringformat:"i" %}selected="selected" {%endif%}>
+                    {{year}}</option>
+                {% endfor %}
+            </select>
+        </p>
+        <p>
+            <label for="f_count">Количество</label>
+            <select name="count_cars" id="f_count">
+                {% for val in counts %}
+                <option value="{{val}}" {% if params.count_cars == val|stringformat:"i" %}selected="selected" {%endif%}>
+                    {{val}}</option>
+                {% endfor %}
+            </select>
+        </p>
+        <p>
+            <input type="checkbox" name="photos" id="f_photos" {% if 'photos' in params %}checked{%endif%}>
+            <label for="f_photos">Только с фото</label>
+        </p>
+        <p>
+            <input type="submit" value="Найти" id="submit">
+        </p>
+    </form>
+</div>

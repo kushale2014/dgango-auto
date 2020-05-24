@@ -1,114 +1,61 @@
-<aside class="left-side sidebar-offcanvas">
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-        <!-- Sidebar user panel -->
-        <div class="user-panel">
-            <div class="pull-left image">
-                <img src="img/avatar3.png" class="img-circle" alt="User Image" />
-            </div>
-            <div class="pull-left info">
-                <p>Hello, Jane</p>
-
-                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-            </div>
-        </div>
-        <!-- search form -->
-        <form action="#" method="get" class="sidebar-form">
-            <div class="input-group">
-                <input type="text" name="q" class="form-control" placeholder="Search..." />
-                <span class="input-group-btn">
-                    <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i
-                            class="fa fa-search"></i></button>
-                </span>
-            </div>
-        </form>
-        <!-- /.search form -->
-        <!-- sidebar menu: : style can be found in sidebar.less -->
-        <ul class="sidebar-menu">
-            <li class="active">
-                <a href="index.html">
-                    <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-                </a>
-            </li>
-            <li>
-                <a href="pages/widgets.html">
-                    <i class="fa fa-th"></i> <span>Widgets</span> <small class="badge pull-right bg-green">new</small>
-                </a>
-            </li>
-            <li class="treeview">
-                <a href="#">
-                    <i class="fa fa-bar-chart-o"></i>
-                    <span>Charts</span>
-                    <i class="fa fa-angle-left pull-right"></i>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="pages/charts/morris.html"><i class="fa fa-angle-double-right"></i> Morris</a>
-                    </li>
-                    <li><a href="pages/charts/flot.html"><i class="fa fa-angle-double-right"></i> Flot</a></li>
-                    <li><a href="pages/charts/inline.html"><i class="fa fa-angle-double-right"></i> Inline
-                            charts</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="treeview">
-                <a href="#">
-                    <i class="fa fa-laptop"></i>
-                    <span>UI Elements</span>
-                    <i class="fa fa-angle-left pull-right"></i>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="pages/UI/general.html"><i class="fa fa-angle-double-right"></i> General</a>
-                    </li>
-                    <li><a href="pages/UI/icons.html"><i class="fa fa-angle-double-right"></i> Icons</a></li>
-                    <li><a href="pages/UI/buttons.html"><i class="fa fa-angle-double-right"></i> Buttons</a>
-                    </li>
-                    <li><a href="pages/UI/sliders.html"><i class="fa fa-angle-double-right"></i> Sliders</a>
-                    </li>
-                    <li><a href="pages/UI/timeline.html"><i class="fa fa-angle-double-right"></i> Timeline</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="treeview">
-                <a href="#">
-                    <i class="fa fa-edit"></i> <span>Forms</span>
-                    <i class="fa fa-angle-left pull-right"></i>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="pages/forms/general.html"><i class="fa fa-angle-double-right"></i> General
-                            Elements</a>
-                    </li>
-                    <li><a href="pages/forms/advanced.html"><i class="fa fa-angle-double-right"></i> Advanced
-                            Elements</a></li>
-                    <li><a href="pages/forms/editors.html"><i class="fa fa-angle-double-right"></i> Editors</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="treeview">
-                <a href="#">
-                    <i class="fa fa-table"></i> <span>Tables</span>
-                    <i class="fa fa-angle-left pull-right"></i>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="pages/tables/simple.html"><i class="fa fa-angle-double-right"></i> Simple
-                            tables</a>
-                    </li>
-                    <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> Data
-                            tables</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="pages/calendar.html">
-                    <i class="fa fa-calendar"></i> <span>Calendar</span>
-                    <small class="badge pull-right bg-red">3</small>
-                </a>
-            </li>
-            <li>
-                <a href="pages/mailbox.html">
-                    <i class="fa fa-envelope"></i> <span>Mailbox</span>
-                    <small class="badge pull-right bg-yellow">12</small>
-                </a>
-            </li>
-        </ul>
-    </section>
-    <!-- /.sidebar -->
-</aside>
+<div class="sidenav">
+    <form action="{% url 'index' %}" method="post">
+        <p>
+            <label for="f_price1">Цена</label>
+            <select name="pric1" id="f_price1">
+                <option value="0" selected="selected" style="color:#CCC;">от</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+                <option value="1200">1200</option>
+                <option value="1500">1500</option>
+                <option value="2000">2000</option>
+            </select>
+            <label>-</label>
+            <select name="price2" id="f_price2">
+                <option value="0" style="color:#CCC;">до</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+                <option value="1200">1200</option>
+                <option value="1500">1500</option>
+                <option value="2000">2000</option>
+            </select>
+        </p>
+        <p>
+            <label for="f_year1">Год</label>
+            <select name="year1" id="f_year1">
+                <option value="0" selected="selected" style="color:#CCC;">от</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+            </select>
+            <label>-</label>
+            <select name="year2" id="f_year2">
+                <option value="0" style="color:#CCC;">до</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+            </select>
+        </p>
+        <p>
+            <label for="f_count">Количество</label>
+            <select name="count" id="f_count">
+                {% for val in ['20','50','100'] %}
+                <option value="{{val}}">{{val}}</option>
+                {% endfor %}
+            </select>
+        </p>
+        <p>
+            <input type="checkbox" name="photos" id="f_photos" {% if 'photos' in params %}checked{%endif%}>
+            <label for="f_photos">Только с фото</label>
+        </p>
+        <p>
+            <input type="submit" value="Найти" id="submit">
+        </p>
+    </form>
+</div>

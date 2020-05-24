@@ -26,6 +26,7 @@ def rst_count_pages(soup):
 
 
 def olx_parcing(soup):
+    cars = []
     trs = soup.find('table', attrs={'id': 'offers_table'}).find_all(
         'tr', attrs={'class': 'wrap'})
     for ss in trs:
@@ -50,9 +51,11 @@ def olx_parcing(soup):
             'place': place,
             'date': date,
         })
+    return cars
 
 
 def autoria_parcing(soup):
+    cars = []
     sections = soup.find_all('section', attrs={'class': 'ticket-item'})
     for ss in sections:
         try:
@@ -74,9 +77,11 @@ def autoria_parcing(soup):
             'place': place,
             'date': date,
         })
+    return cars
 
 
 def rst_parcing(soup):
+    cars = []
     divs = soup.find_all('div', attrs={'class': 'rst-ocb-i'})
     for dd in divs:
         try:
@@ -106,52 +111,112 @@ def rst_parcing(soup):
             'place': place,
             'date': date,
         })
+    return cars
 
 
 def get_olx(params):
     cars = []
     u = 'https://www.olx.ua/transport/legkovye-avtomobili/od/?'
+    if 'price1' in params:
+        if int(params['price1']) > 0:
+            u += '&search%5Bfilter_float_price%3Afrom%5D=' + \
+                str(params['price1'])
     if 'price2' in params:
-        u += '&search%5Bfilter_float_price%3Ato%5D=' + str(params['price2'])
+        if int(params['price2']) > 0:
+            u += '&search%5Bfilter_float_price%3Ato%5D=' + \
+                str(params['price2'])
     if 'year1' in params:
-        u += '&search%5Bfilter_float_motor_year%3Afrom%5D=' + \
-            str(params['year1'])
-    u += '&search%5Bphotos%5D=1&page={page}&currency=USD'
+        if int(params['year1']) > 0:
+            u += '&search%5Bfilter_float_motor_year%3Afrom%5D=' + \
+                str(params['year1'])
+    if 'year2' in params:
+        if int(params['year2']) > 0:
+            u += '&search%5Bfilter_float_motor_year%3Ato%5D=' + \
+                str(params['year2'])
+    if 'photos' in params:
+        if int(params['photos']) > 0:
+            u += '&search%5Bphotos%5D=1'
+    u += '&page={page}&currency=USD'
     count_pages, page = 1, 1
-    while len(cars) < params['count_cars'] and page <= count_pages:
+    count_cars = int(params['count_cars'])
+    while len(cars) < count_cars and page <= count_pages:
         soup = get_soup(u.format(page=page))
         if page == 1:
             count_pages = olx_count_pages(soup)
-        olx_parcing(soup)
-        page += 1
-    return cars[:params['count_cars']]
-
-
-def get_autoria(count_cars):
-    cars = []
-    base_url = 'https://auto.ria.com/search/?year[0].gte=1995&categories.main.id=1&region.id[0]=12&price.USD.lte={price}&price.currency=1&abroad.not=0&custom.not=-1&damage.not=1&spareParts=0&photos.all.id.gte=1&dates.sold.not=0000-00-00%2000:00:00&page={page}&size=100'
-    count_pages, page = 1, 1
-    while len(cars) < count_cars and page <= count_pages:
-        soup = get_soup(base_url.format(price=PRICE, page=page-1))
-        autoria_parcing(soup)
+        cars += olx_parcing(soup)
         page += 1
     return cars[:count_cars]
 
 
-def get_rst(count_cars):
+def get_autoria(params):
     cars = []
-    base_url = 'http://rst.ua/ukr/oldcars/odessa/?make[]=0&price[]=101&price[]={price}&year[]=1995&year[]=0&condition=1,2&engine[]=0&engine[]=0&fuel=0&gear=0&drive=0&results=4&saled=1&notcust=&sort=1&city=0&from=sform&start={page}'
+    u = 'https://auto.ria.com/search/?'
+    if 'year1' in params:
+        if int(params['year1']) > 0:
+            u += '&year[0].gte=' + str(params['year1'])
+    if 'year2' in params:
+        if int(params['year2']) > 0:
+            u += '&year[0].lte=' + str(params['year2'])
+    u += '&categories.main.id=1&region.id[0]=12'
+    if 'price1' in params:
+        if int(params['price1']) > 0:
+            u += '&price.USD.gte=' + str(params['price1'])
+    if 'price2' in params:
+        if int(params['price2']) > 0:
+            u += '&price.USD.lte=' + str(params['price2'])
+    u += '&price.currency=1&abroad.not=0&custom.not=-1&damage.not=1&spareParts=0'
+    if 'photos' in params:
+        if int(params['photos']) > 0:
+            u += '&photos.all.id.gte=1'
+    u += '&dates.sold.not=0000-00-00%2000:00:00&page={page}&size=100'
+    count_pages, page = 1, 1
+    count_cars = int(params['count_cars'])
+    while len(cars) < count_cars and page <= count_pages:
+        soup = get_soup(u.format(page=page-1))
+        cars += autoria_parcing(soup)
+        page += 1
+    return cars[:count_cars]
+
+
+def get_rst(params):
+    cars = []
+    u = 'http://rst.ua/ukr/oldcars/odessa/?make[]=0'
+    price = '101'
+    if 'price1' in params:
+        if int(params['price1']) > 0:
+            price = params['price1']
+    u += '&price[]=' + price
+    price = '0'
+    if 'price2' in params:
+        if int(params['price2']) > 0:
+            price = params['price2']
+    u += '&price[]=' + price
+    year = '0'
+    if 'year1' in params:
+        if int(params['year1']) > 0:
+            year = params['year1']
+    u += '&year[]=' + year
+    year = '0'
+    if 'year2' in params:
+        if int(params['year2']) > 0:
+            year = params['year2']
+    u += '&year[]=' + year
+    u += '&condition=1,2&engine[]=0&engine[]=0&fuel=0&gear=0&drive=0&results=4&saled=1&notcust=&sort=1&city=0&from=sform&start={page}'
     page = 1
+    count_cars = int(params['count_cars'])
     while len(cars) < count_cars:
-        soup = get_soup(base_url.format(price=PRICE, page=page))
-        rst_parcing(soup)
+        soup = get_soup(u.format(page=page))
+        cars += rst_parcing(soup)
         page += 1
     return cars[:count_cars]
 
 
 def get_cars(params):
-    cars = {'olx': get_olx(params)}
-    return cars
+    dict_cars = {}
+    dict_cars['RST'] = get_rst(params)
+    dict_cars['OLX'] = get_olx(params)
+    dict_cars['Autoria'] = get_autoria(params)
+    return dict_cars
 
 
 if __name__ == '__main__':

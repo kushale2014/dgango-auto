@@ -67,3 +67,63 @@
   padding-top: 50px;
   padding-right: 10px;
 }
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: url("../1.png");
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 210px;
+  padding: 0px 10px;
+}
+
+.sidenav p {
+  margin: 20px 5px;
+}
+
+.sidenav #submit {
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: large;
+  width: 100px;
+  height: 50px;
+  background: -webkit-linear-gradient(top, #ffdc7f 0, #ffb900 100%);
+}
+
+.sidenav select {
+  height: 25px;
+  width: 70px;
+  font-size: 11pt;
+  text-align: center;
+}
+
+.sidenav label {
+  font-size: 110%;
+}
+
+.sidenav .price_label {
+  width: 60px;
+  display: inline-block;
+  text-align: right;
+}

@@ -1,4 +1,5 @@
 {% load static %}
+{% load auto_tag %}
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -12,9 +13,11 @@
 
 <body>
     <div class="wrapper">
-        {% include 'include/sidebar.html' %}
-        {% block content %}
-        {% endblock content %}
+        {% get_sidebar params %}
+        <div class="main">
+            {% block content %}
+            {% endblock content %}
+        </div>
     </div>
 </body>
 
