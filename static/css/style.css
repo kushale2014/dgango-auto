@@ -77,8 +77,7 @@
   left: 0;
   background-image: url("../1.png");
   overflow-x: hidden;
-  padding-top: 20px;
-  padding-left: 10px;
+  padding: 20px 10px;
 }
 
 .sidenav a {
@@ -126,4 +125,13 @@
   width: 60px;
   display: inline-block;
   text-align: right;
+}
+
+.sidenav .search {
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
+hr {
+  margin-top: 10px;
 }

@@ -1,5 +1,16 @@
 <div class="sidenav">
     <form action="{% url 'index' %}" method="post">
+        <div>
+            Площадки для поиска:
+            <br>
+            <input type="checkbox" name="RST" id="f_rst" class="search" checked>
+            <label for="f_rst">RST</label><br>
+            <input type="checkbox" name="OLX" id="f_olx" class="search" checked>
+            <label for="f_olx">OLX</label><br>
+            <input type="checkbox" name="Autoria" id="f_autoria" class="search" checked>
+            <label for="f_autoria">Autoria</label>
+            <hr>
+        </div>
         <p>
             <label for="f_price1">Цена</label>
             <select name="pric1" id="f_price1">

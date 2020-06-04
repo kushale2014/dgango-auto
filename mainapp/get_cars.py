@@ -134,8 +134,7 @@ def get_olx(params):
             u += '&search%5Bfilter_float_motor_year%3Ato%5D=' + \
                 str(params['year2'])
     if 'photos' in params:
-        if int(params['photos']) > 0:
-            u += '&search%5Bphotos%5D=1'
+        u += '&search%5Bphotos%5D=1'
     u += '&page={page}&currency=USD'
     count_pages, page = 1, 1
     count_cars = int(params['count_cars'])
@@ -166,8 +165,7 @@ def get_autoria(params):
             u += '&price.USD.lte=' + str(params['price2'])
     u += '&price.currency=1&abroad.not=0&custom.not=-1&damage.not=1&spareParts=0'
     if 'photos' in params:
-        if int(params['photos']) > 0:
-            u += '&photos.all.id.gte=1'
+        u += '&photos.all.id.gte=1'
     u += '&dates.sold.not=0000-00-00%2000:00:00&page={page}&size=100'
     count_pages, page = 1, 1
     count_cars = int(params['count_cars'])
@@ -213,13 +211,14 @@ def get_rst(params):
 
 def get_cars(params):
     dict_cars = {}
-    dict_cars['RST'] = get_rst(params)
-    dict_cars['OLX'] = get_olx(params)
-    dict_cars['Autoria'] = get_autoria(params)
+    if 'rst' in params:
+        dict_cars['rst'] = get_rst(params)
+    if 'olx' in params:
+        dict_cars['olx'] = get_olx(params)
+    if 'autoria' in params:
+        dict_cars['autoria'] = get_autoria(params)
     return dict_cars
 
 
 if __name__ == '__main__':
-    cars = get_olx(10)
-    print(cars)
-    print(len(cars))
+    print(1)

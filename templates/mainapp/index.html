@@ -3,7 +3,7 @@
 {% block content %}
 {% for key, value in cars.items %}
 <section class="cars">
-    <h2 class="title {{key}}">Авто на сайте {{key}}</h2>
+    <h2 class="title {{key}}">Авто на сайте {{key|upper}}</h2>
     <hr>
     <div class="content {{key}}">
         {% for car in value %}
