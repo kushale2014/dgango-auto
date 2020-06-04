@@ -3,10 +3,10 @@ from mainapp.get_cars import get_cars
 
 PARAMS = {
     'search': ['rst', 'olx', 'autoria'],
-    'count_cars': '100',
+    'count_cars': '20',
     'price1': '0',
-    'price2': '1200',
-    'year1': '1995',
+    'price2': '0',
+    'year1': '0',
     'year2': '0',
     'photos': '1',
 }
